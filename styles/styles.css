@@ -1,0 +1,138 @@
+body {
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#full-navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding-top: 3vh;
+    padding-right: 3vh;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black !important;
+    background-color: white!important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0101f8;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.sub-footer {
+    background-color: #343a40;
+    color: white;
+    position: relative;
+    /* Change absolute to relative */
+    top: 20px;
+    /* Remove the calc() function */
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.horizontal-line {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address-line {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.square-block {
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* border-radius: 10px; */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.square-block h2 {
+    margin-top: 0;
+}
+
+.square-block ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.square-block ul li {
+    margin-bottom: 10px;
+}
+
+.square-block ul li i {
+    margin-right: 5px;
+}
+
+.stretched-menu {
+    min-width: 1000vw;
+    /* left: 0 !important; */
+    /* right: 0 !important; */
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu {
+    left: 0;
+    height: 80vh;
+}
+
+.dropdown-item {
+    /* width: calc(100% - 20px); */
+    width: 1vh;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+
+.dropdown-item.with-image {
+    text-align: center;
+}
+
+.dropdown-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.dropdown-item a {
+    display: block;
+    text-align: center;
+}
