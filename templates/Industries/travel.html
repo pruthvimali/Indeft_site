@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Footer</title>
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this line to include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        .main-image {
+            background: linear-gradient(to bottom, rgb(6, 6, 133), rgb(6, 6, 133));
+            background-size: 220vh 65vh;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        
+        .vertical-line {
+            border-left: 1px solid #e0dfdf;
+            height: 100x;
+        }
+        
+        .info-block {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-image">
+        <!-- navbar starts-------------- -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
+            <a class="navbar-brand" href="/templates/Home.html">
+                <img src="/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">SOFTWARE DEVELOPMENT</a>
+                            <a class="dropdown-item" href="#">MANAGED HOSTING SERVICES</a>
+                            <a class="dropdown-item" href="#">IT SECURITY SERVICES</a>
+                            <a class="dropdown-item" href="#">MANAGED SERVICES (REMOTE + ONSITE)</a>
+                            <a class="dropdown-item" href="#">PARTNER BASED SERVICES</a>
+                            <a class="dropdown-item" href="#">PROJECT SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Industries
+                    </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
+                            <a class="dropdown-item" href="/templates/Industries/Healthcare.html">Healthcare</a>
+                            <a class="dropdown-item" href="/templates/Industries/Logistics.html">Logistics</a>
+                            <a class="dropdown-item" href="/templates/Industries/eCommerse.html">e-Commerce</a>
+                            <a class="dropdown-item" href="/templates/Industries/FMCG.html">FMCG</a>
+                            <a class="dropdown-item" href="/templates/Industries/Food.html">Food & Restaurant</a>
+                            <a class="dropdown-item" href="/templates/Industries/Education.html">Education/ e-Learning</a>
+                            <a class="dropdown-item" href="/templates/Industries/travel.html">Travel & Hospitality</a>
+                            <a class="dropdown-item" href="/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
+                            <a class="dropdown-item" href="/templates/Industries/Entertainment.html">Entertainment</a>
+                        </div>
+
+
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends-------------- -->
+
+
+        <div class="container" style="padding-top: 1%;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="text" style="color: white;"><br><br><br>
+                        <h2>Accelerating transformation in the travel & hospitality space</h2><br>
+                        <p>For a seamless experience Our certified experts redefine guest experience for the new era of connectivity and personalization</p>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="padding-top: 2%;">
+                    <div class="image-container">
+                        <img src="/Images/gr_travelbnr.svg" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row square-block info-block" style="background-color: white;">
+                <div class="content col-lg-9" style=" position: relative; top:40px;">
+                    <p>The travel and hospitality industry faces various challenges in today's digital landscape, including rapidly evolving customer expectations, fierce competition, and the need for seamless experiences across multiple touchpoints. At
+                        Indeft, our experts understand these challenges and leverage their extensive implementation experience and platform expertise to provide tailored solutions.</p>
+                </div>
+                <div class="vertical-line "></div>
+                <div class="col-lg-2">
+                    <div class="image-container" style="padding-left: 5%;">
+                        <img src="/Images/headfone.png" alt="Your Image">
+                    </div>
+                    <div class="button-container mt-auto">
+                        <button type="button" class="btn btn-primary btn-arrow" style="width: 200px;">
+                            Talk to our Experts  <span class="btn-arrow-icon">&#10148;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h3>We unlock the power of digital transformation in the travel & hospitality industry</h3>
+                    <p>We offers a comprehensive range of platform development services tailored specifically for the travel and hospitality industry. For hoteliers, we develop robust and user-friendly booking platforms that seamlessly handle reservations,
+                        availability, and payments. Our solutions for tour operators enable efficient itinerary planning, online booking, and dynamic packaging. Restaurant owners benefit from our expertise in developing intuitive and feature-rich restaurant
+                        management systems that streamline operations and enhance customer experiences. We also provide platform development services for guides, cab drivers, and aggregator platforms, ensuring seamless connectivity, real-time tracking,
+                        and secure payment integration.</p>
+                </div>
+                <div class="col-lg-2" style="left: 5%;">
+                    <img src="/Images/travel-hospitality.png" style="width: 230%; height: 100%;" alt="Your Image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container text-center" style="padding-bottom: 3%;">
+            <h2>Know more about our software development services for travel and hospitality industry.</h2>
+            <div class="button-container mt-auto" style="padding-top: 2%;">
+                <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                    Consult Now   <span class="btn-arrow-icon">&#10148;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main containt starts -->
+    <div style="background-color: #e0dfdf; padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="blue-box">
+                        <p>The travel and hospitality sectors we serve</p>
+                        <p>We provide strategic guidance for the following travel and hospitality sectors.</p>
+                    </div>
+                    <div class="image-container" style="padding-top:15%;">
+                        <img src="/Images/development-opportunity-strategy-improvement-word.png" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Hotels & Resorts
+                        </h4>
+                        <hr>
+                        <p>Our services encompass property management systems (PMS), central reservation systems (CRS), and channel management integrations, enabling seamless management of bookings, inventory, and online distribution channels.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Tour Operators</h4>
+                        <hr>
+                        <p>We offer customized tour booking platforms with features like real-time availability, dynamic pricing & integration with global distribution systems, empowering operators to efficiently manage bookings, itineraries & user interactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: -6%;">
+                <div class="col-lg-3">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Airlines & Aviation</h4>
+                        <hr>
+                        <p>Our solutions include airline reservation systems (ARS), departure control systems (DCS), and customer loyalty programs, integrating with flight inventory systems and providing a seamless passenger experience from booking to boarding.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Aggregator Platform
+                        </h4>
+                        <hr>
+                        <p>We develop robust aggregator platforms with advanced search and filtering capabilities, API integrations with multiple suppliers, secure payment gateways, and personalized user profiles for seamless travel bookings. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 0%;">
+                <div class="col-lg-3">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Event Management & Conferences</h4>
+                        <hr>
+                        <p>Our software solutions provide event registration and ticketing platforms with features like attendee management, session scheduling, badge printing, and analytics to ensure smooth event organization and attendee engagement. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Car Rental And Transportation
+                        </h4>
+                        <hr>
+                        <p>We build comprehensive car rental platforms with features such as vehicle availability, booking management, GPS tracking, driver management, and integration with payment gateways and third-party platforms for a seamless rental
+                            experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-top: 3%;">
+        <h1>Our custom <strong style="color:blue;">travel and hospitality</strong> software development services</h1>
+        <!-- <h7>With our expertise and deep understanding of FMCG business models, we can help streamline your operations, optimize processes, and drive growth.</h7> -->
+    </div>
+
+    <div style="padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/online-booking-reservation.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Online Booking and Reservation Systems</strong></h4>
+                        <p>Our certified experts develop robust and user-friendly online booking platforms that allow guests to easily search for and book accommodations, restaurants, or services. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/property-management-system.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Property Management Systems (PMS)</strong></h4>
+                        <p>We design and implement comprehensive PMS software to streamline operations, including front desk management, reservations, guest profiles, invoicing, and reporting. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/mobile-application-development.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">
+                            Mobile Application Development
+                        </strong></h4>
+                        <p>As a leading software development company, we create intuitive and feature-rich mobile apps for hotels, resorts, and restaurants to enhance guest experiences, provide seamless booking options, and offer personalized services.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/oil-service4.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">CRM and Guest Relationship Management</strong></h4>
+                        <p>Leveraging our development experience, we Build customized CRM solutions to manage guest interactions, track preferences, and deliver personalized experiences and targeted marketing campaigns. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/analylics-reporting.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Analytics and Reporting</strong></h4>
+                        <p>We create analytics and reporting tools that provide valuable insights into guest behavior, revenue patterns, occupancy rates, and operational performance, enabling data-driven decision-making.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/inventory-management-solutions.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Inventory Management Solutions</strong></h4>
+                        <p>Our seasoned experts analyze your objectives to develop custom inventory management systems that streamline procurement, track stock levels, manage suppliers, and optimize inventory for better cost control and operational efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/restaurant-management.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Revenue Management Systems</strong></h4>
+                        <p> Leveraging cutting-edge technologies and platforms, we implement revenue management software that utilizes data analytics to optimize pricing strategies, maximize revenue, and improve occupancy rates.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- next-industry-link -->
+    <div class="next-industry-main">
+        <div style="height: 100px;">
+            <div class="container">
+                <div class="next-industry-block">
+                    <div class="row next-industry-image">
+                        <p style="color: white; display: block; top: 70%; position: relative; left: 15px;">Healthcare IT solutions</p>
+                        <div class="col-sm-6" style="left:60px">
+                            <img src="/Images/medical-banner2.png" class="img-fluid" alt="Medical Banner">
+                        </div>
+                        <div>
+                            <h3>Healthcare IT solutions</h3>
+                            <p>Our experts have helped countless healthcare organizations with quality-driven healthcare IT services.</p>
+                            <a href="/templates/Industries/Healthcare.html">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="next-industry">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2>Know about Other Services</h2><br>
+                        <p>As one of the top-rated mobile application companies in the USA and India, our flexible, scalable, and cost-effective services give access to expert engineering teams, build innovative apps utilizing the latest tech stacks, and
+                            implement the validated application development practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
+        <h3>If you are looking to implement any of the above Solutions or Industry Specific Solutions, we are happy to help you!</h3>
+        <div class="button-container mt-auto" style="padding-top: 2%;">
+            <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                Get a Free Quote   <span class="btn-arrow-icon">&#10148;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sub-footer py-3 bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="/Images/indeft_logo.png "><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced resources
+                    we have become a trusted name and a global IT Solution and Services Partner for our clients.
+                </div>
+                <div class="col-md-3 ">
+                    <h5>About</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">Leadership Team</a></li>
+                        <li><a href="# ">Our Development Process</a></li>
+                        <li><a href="# ">Careers</a></li>
+                        <li><a href="# ">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Services</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">Android App Development</a></li>
+                        <li><a href="# ">iOS App Development</a></li>
+                        <li><a href="# ">Hybrid App Development</a></li>
+                        <li><a href="# ">Web Development</a></li>
+                        <li><a href="# ">Trending JS Framework</a></li>
+                        <li><a href="# ">ECommerce & CMS</a></li>
+                        <li><a href="# ">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Get in Touch</h5><br>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
+                        <p class="address-line ">Office No. 302 4th Floor,</p>
+                        <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
+                        <p class="address-line ">Sus Road Pune – 411021</p>
+                    </div>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
+                        <p class="address-line ">Registered Office D-001,</p>
+                        <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
+                        <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="horizontal-line "></div>
+
+        <div class="container text-left ">
+            <div class="d-flex justify-content-between align-items-center ">
+                <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
+                <div>
+                    <i class="bi bi-linkedin fs-3 mx-2 "></i>
+                    <i class="bi bi-facebook fs-3 mx-2 "></i>
+                    <i class="bi bi-instagram fs-3 mx-2 "></i>
+                    <i class="bi bi-youtube fs-3 mx-2 "></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS (optional, for toggling functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <script>
+        document.getElementById("contactBtn").addEventListener("click", function() {
+            // Navigate to the contact.html page
+            window.location.href = "/templates/contact_us.html";
+        });
+    </script>
+
+</body>
+
+</html>

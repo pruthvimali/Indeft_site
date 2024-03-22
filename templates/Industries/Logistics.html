@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Footer</title>
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this line to include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        .main-image {
+            background: linear-gradient(to bottom, #b67e85, #6c4bef);
+            background-size: 220vh 65vh;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        
+        .vertical-line {
+            border-left: 1px solid #e0dfdf;
+            height: 100x;
+        }
+        
+        .info-block {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-image">
+        <!-- navbar starts-------------- -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
+            <a class="navbar-brand" href="/templates/Home.html">
+                <img src="/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">SOFTWARE DEVELOPMENT</a>
+                            <a class="dropdown-item" href="#">MANAGED HOSTING SERVICES</a>
+                            <a class="dropdown-item" href="#">IT SECURITY SERVICES</a>
+                            <a class="dropdown-item" href="#">MANAGED SERVICES (REMOTE + ONSITE)</a>
+                            <a class="dropdown-item" href="#">PARTNER BASED SERVICES</a>
+                            <a class="dropdown-item" href="#">PROJECT SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Industries
+                    </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
+                            <a class="dropdown-item" href="/templates/Industries/Healthcare.html">Healthcare</a>
+                            <a class="dropdown-item" href="/templates/Industries/Logistics.html">Logistics</a>
+                            <a class="dropdown-item" href="/templates/Industries/eCommerse.html">e-Commerce</a>
+                            <a class="dropdown-item" href="/templates/Industries/FMCG.html">FMCG</a>
+                            <a class="dropdown-item" href="/templates/Industries/Food.html">Food & Restaurant</a>
+                            <a class="dropdown-item" href="/templates/Industries/Education.html">Education/ e-Learning</a>
+                            <a class="dropdown-item" href="/templates/Industries/travel.html">Travel & Hospitality</a>
+                            <a class="dropdown-item" href="/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
+                            <a class="dropdown-item" href="/templates/Industries/Entertainment.html">Entertainment</a>
+                        </div>
+
+
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends-------------- -->
+
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="text" style="color: white;"><br><br><br>
+                        <h2>Digital Transformation - Logistics & Transportation Services</h2><br>
+                        <p>Developing cost-effective supply chain, warehouse, distribution and last mile IT solutions </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-container">
+                        <img src="/Images/logistic-banner.png" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row square-block info-block" style="background-color: white;">
+                <div class="content col-lg-9" style=" position: relative; top:40px;">
+                    <p>At Indeft, we stay at the brim of digital transformation in transformation and logistics sector to modernise paper-based legacy systems, implement cutting-edge technologies, and enhance accessibility. Partner with our team of certified
+                        experts to build custom logistics and transportation IT solutions that solve your business' use cases and unlock the power of digital innovation for your business.</p>
+                </div>
+                <div class="vertical-line "></div>
+                <div class="col-lg-2">
+                    <div class="image-container" style="padding-left: 5%;">
+                        <img src="/Images/headfone.png" alt="Your Image">
+                    </div>
+                    <div class="button-container mt-auto">
+                        <button type="button" class="btn btn-primary btn-arrow" style="width: 200px;">
+                            Talk to our Experts  <span class="btn-arrow-icon">&#10148;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h3>Technology-driven logistics and transportation solutions</h3>
+                    <p>As a leader in digital transformation for logistics and transportation, we've helped several carriers, logistics service providers, logistics distribution & stocking, and express deliveries with their digital tolling solutions, outbound
+                        logistics services, logistics analytics, enterprise system development, fleet and asset management, and process automation solutions.</p>
+                    <p>Our strong combination of industry-specific know-how and deep technical acumen has helped multiple customers in the transportation and logistics space to build digital solutions that enable a 360-degree view of operations. Our consultants
+                        have experience in collaborating with with global enterprises across the transportation and logistics value chain, including freight & logistics, third party logistics, trucking, freight forwarding, rail, ocean shipping, courier,
+                        express, parcel, and distribution. We can support your futuristic and scalable goals to help you attain higher business value and successful and cost-effective outcomes.</p>
+                </div>
+                <div class="col-lg-2" style="left: 5%;">
+                    <img src="/Images/logistic-add.png" style="width: 250%; height: 80%;" alt="Your Image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container text-center" style="padding-bottom: 3%;">
+            <h2>Know more about our logistics and transportation IT services.</h2>
+            <div class="button-container mt-auto" style="padding-top: 2%;">
+                <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                    Consult Now   <span class="btn-arrow-icon">&#10148;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main containt starts -->
+    <div style="background-color: #e0dfdf; padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="blue-box">
+                        <p>The logistics and transportation</p>
+                        <p>verticals we serve</p>
+                    </div>
+                    <div class="image-container" style="padding-top:15%;">
+                        <img src="/Images/logistic-serve.png" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Freight And Logistics Management</h4>
+                        <hr>
+                        <p>Our IT solutions help optimize freight movement, tracking shipments, managing inventory, and streamlining logistics operations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Fleet Management</h4>
+                        <hr>
+                        <p>Our software solutions monitor and manage fleet vehicles, including GPS tracking, route optimization, vehicle maintenance, and driver performance management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 0%;">
+                <div class="col-lg-3">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Supply Chain Visibility</h4>
+                        <hr>
+                        <p>Our technology solutions enable end-to-end visibility across the supply chain, allowing companies to track shipments, monitor inventory levels, and identify bottlenecks or delays.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Last-Mile Delivery</h4>
+                        <hr>
+                        <p>We build IT platforms that optimizing last-mile delivery operations, including route planning, driver dispatching, proof of delivery, and customer communication.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block">
+                        <h4>Transportation Network Optimization</h4>
+                        <hr>
+                        <p>We leverage IT tools for optimizing transportation networks, including load planning, carrier selection, rate management, and freight consolidation.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-top: 3%;">
+        <h2>Full-cycle <strong style="color:blue;">logistics and transportation IT solutions</strong></h2>
+        <h7>We offer custom digital transformation services for the logistics and transportation sector that help leverage the power of technologies to build future-driven IT platforms and systems.</h7>
+    </div>
+
+    <div style="padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/logistic-icon1.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Digital Supply Chain Solutions</strong></h4>
+                        <p>Our consultants provide strategic guidance and industry-specific insights to help younavigate digital transformation, optimize IT infrastructure, and develop effective tech roadmaps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/logistic-icon2.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Transportation Management Systems (TMS)</strong></h4>
+                        <p>We design and develop intuitive mobile apps to connect FMCG with their customers, streamline sales and distribution processes, and provide seamless shopping experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/logistic-icon3.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Warehouse Management Systems (WMS)</strong></h4>
+                        <p>We specialize in integrating disparate systems and technologies within the FMCG ecosystem, ensuring seamless data flow, real-time information sharing, and improved collaboration.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/logistic-icon4.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Fleet Management Solutions</strong></h4>
+                        <p>Our managed services, including system monitoring, maintenance, and support, to ensure prime focus on core operations while we handle their software and technology requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/logistic-icon5.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Customized Mobile Applications</strong></h4>
+                        <p>Our advanced analytics and reporting results in valuable insights to optimize supply chain management, track sales performance, identify trends, and make data-driven decisions.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/logistic-icon7.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Web Application Development</strong></h4>
+                        <p> We build custom and secure web portals that facilitate seamless interactions with suppliers, distributors, and other stakeholders, enhancing efficiency & supply chain management.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="white-block" style="text-align: center; height: 80%;">
+                            <img src="/Images/logistic-icon6.png" style="height: 15%;">
+                            <hr>
+                            <h4><strong style="color:rgb(68, 68, 183);">Data Analytics and Business Intelligence</strong></h4>
+                            <p> We build custom and secure web portals that facilitate seamless interactions with suppliers, distributors, and other stakeholders, enhancing efficiency & supply chain management.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- next-industry-link -->
+        <div class="next-industry-main">
+            <div style="height: 100px;">
+                <div class="container">
+                    <div class="next-industry-block">
+                        <div class="row next-industry-image">
+                            <p style="color: white; display: block; top: 65%; position: relative; left: 15px;right:200px;">FMCG services and <br>Solutions</p>
+                            <div class="col-sm-7" style="left:60px">
+                                <img src="/Images/fmcg-tag.png" class="img-fluid" alt="Medical Banner">
+                            </div>
+                            <div><br>
+                                <h4>FMCG services and solutionss</h4>
+                                <p>Indeft is dedicated to helping FMCG companies revolutionize their operations by leveraging cutting-edge technologies...</p>
+                                <a href="/templates/Industries/FMCG.html">Read More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="next-industry">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h2>Know about Other Services</h2><br>
+                            <p>As one of the top-rated mobile application companies in the USA and India, our flexible, scalable, and cost-effective services give access to expert engineering teams, build innovative apps utilizing the latest tech stacks,
+                                and implement the validated application development practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
+            <h3>If you are looking to implement any of the above Solutions or Industry Specific Solutions, we are happy to help you!</h3>
+            <div class="button-container mt-auto" style="padding-top: 2%;">
+                <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                Get a Free Quote   <span class="btn-arrow-icon">&#10148;</span>
+            </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="sub-footer py-3 bg-dark ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-3 ">
+                        <img src="/Images/indeft_logo.png "><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced resources
+                        we have become a trusted name and a global IT Solution and Services Partner for our clients.
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5>About</h5><br>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">About Us</a></li>
+                            <li><a href="# ">Leadership Team</a></li>
+                            <li><a href="# ">Our Development Process</a></li>
+                            <li><a href="# ">Careers</a></li>
+                            <li><a href="# ">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5>Services</h5><br>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Android App Development</a></li>
+                            <li><a href="# ">iOS App Development</a></li>
+                            <li><a href="# ">Hybrid App Development</a></li>
+                            <li><a href="# ">Web Development</a></li>
+                            <li><a href="# ">Trending JS Framework</a></li>
+                            <li><a href="# ">ECommerce & CMS</a></li>
+                            <li><a href="# ">Analytics</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5>Get in Touch</h5><br>
+                        <div class="address ">
+                            <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
+                            <p class="address-line ">Office No. 302 4th Floor,</p>
+                            <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
+                            <p class="address-line ">Sus Road Pune – 411021</p>
+                        </div>
+                        <div class="address ">
+                            <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
+                            <p class="address-line ">Registered Office D-001,</p>
+                            <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
+                            <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="horizontal-line "></div>
+
+            <div class="container text-left ">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
+                    <div>
+                        <i class="bi bi-linkedin fs-3 mx-2 "></i>
+                        <i class="bi bi-facebook fs-3 mx-2 "></i>
+                        <i class="bi bi-instagram fs-3 mx-2 "></i>
+                        <i class="bi bi-youtube fs-3 mx-2 "></i>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <!-- Bootstrap JS (optional, for toggling functionality) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+        <script>
+            document.getElementById("contactBtn").addEventListener("click", function() {
+                // Navigate to the contact.html page
+                window.location.href = "/templates/contact_us.html";
+            });
+        </script>
+
+</body>
+
+</html>

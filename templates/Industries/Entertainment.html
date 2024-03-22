@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Footer</title>
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this line to include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        .main-image {
+            background: linear-gradient(to bottom, rgb(48, 171, 219), rgb(48, 171, 219));
+            background-size: 220vh 65vh;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        
+        .vertical-line {
+            border-left: 1px solid #e0dfdf;
+            height: 100x;
+        }
+        
+        .info-block {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-image">
+        <!-- navbar starts-------------- -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
+            <a class="navbar-brand" href="/templates/Home.html">
+                <img src="/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">SOFTWARE DEVELOPMENT</a>
+                            <a class="dropdown-item" href="#">MANAGED HOSTING SERVICES</a>
+                            <a class="dropdown-item" href="#">IT SECURITY SERVICES</a>
+                            <a class="dropdown-item" href="#">MANAGED SERVICES (REMOTE + ONSITE)</a>
+                            <a class="dropdown-item" href="#">PARTNER BASED SERVICES</a>
+                            <a class="dropdown-item" href="#">PROJECT SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Industries
+                    </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
+                            <a class="dropdown-item" href="/templates/Industries/Healthcare.html">Healthcare</a>
+                            <a class="dropdown-item" href="/templates/Industries/Logistics.html">Logistics</a>
+                            <a class="dropdown-item" href="/templates/Industries/eCommerse.html">e-Commerce</a>
+                            <a class="dropdown-item" href="/templates/Industries/FMCG.html">FMCG</a>
+                            <a class="dropdown-item" href="/templates/Industries/Food.html">Food & Restaurant</a>
+                            <a class="dropdown-item" href="/templates/Industries/Education.html">Education/ e-Learning</a>
+                            <a class="dropdown-item" href="/templates/Industries/travel.html">Travel & Hospitality</a>
+                            <a class="dropdown-item" href="/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
+                            <a class="dropdown-item" href="/templates/Industries/Entertainment.html">Entertainment</a>
+                        </div>
+
+
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends-------------- -->
+
+
+        <div class="container" style="padding-top: 1%;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="text" style="color: white;"><br><br><br>
+                        <h2>Unleash the Joy: Where Every Moment Sparks Delight!</h2><br>
+                        <p>Embrace the Magic of Entertainment, Where Memories Are Made and Dreams Come Alive.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="padding-top: 2%;">
+                    <div class="image-container">
+                        <img src="/Images/entertanment.jpeg" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row square-block info-block" style="background-color: white;">
+                <div class="content col-lg-9" style=" position: relative; top:10px;">
+                    <p>Media and entertainment companies face various challenges in the digital age, including content distribution, audience engagement, monetization, and technological advancements. Indeft, as a leading media and entertainment app development
+                        company, can help overcome these challenges by providing innovative solutions. Our expertise lies in developing cutting-edge media and entertainment apps that enable seamless content distribution across multiple platforms and devices.
+                        We leverage advanced technologies such as AI, AR/VR, and cloud computing to enhance user experiences and drive audience engagement.</p>
+                </div>
+                <div class="vertical-line "></div>
+                <div class="col-lg-2">
+                    <div class="image-container" style="padding-left: 5%;">
+                        <img src="/Images/headfone.png" alt="Your Image">
+                    </div>
+                    <div class="button-container mt-auto">
+                        <button type="button" class="btn btn-primary btn-arrow" style="width: 200px;">
+                            Talk to our Experts  <span class="btn-arrow-icon">&#10148;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h3>We unlock the power of digital transformation in the media & entertainment industry</h3>
+                    <p>Indeft specializes in developing feature-rich apps for OTT platforms, music streaming, photo and editing, aggregators, and gaming. Our expertise includes seamless audio and video streaming, real-time content updates, text and GPS-based
+                        facilities, in-app purchases, push notifications, social media integration, localization, live chatting, and reminders. We leverage advanced technologies to create engaging and immersive user experiences that captivate audiences.
+                        Whether it's delivering high-quality media content, enabling interactive features, or optimizing user engagement, Indeft's app development solutions cater to the evolving needs of the media and entertainment industry.</p>
+                </div>
+                <div class="col-lg-2" style="left: 10%;">
+                    <img src="/Images/entertainment.png" style="width: 200%; height: 80%;" alt="Your Image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container text-center" style="padding-bottom: 3%;">
+            <h2>Know more about our software development services for media & entertainment industry</h2>
+            <div class="button-container mt-auto" style="padding-top: 2%;">
+                <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                    Consult Now   <span class="btn-arrow-icon">&#10148;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main containt starts -->
+    <div style="background-color: #e0dfdf; padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="blue-box">
+                        <p>The media and entertainment sectors we serve</p>
+                        <p>We provide strategic guidance for the following media and entertainment sectors</p>
+                    </div>
+                    <div class="image-container" style="padding-top:15%;">
+                        <img src="/Images/development-opportunity-strategy-improvement-word.png" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>OTT Platforms</h4>
+                        <hr>
+                        <p>Our technical development services for OTT platforms, including video transcoding and streaming optimization, content delivery network (CDN) integration, DRM (Digital Rights Management) implementation, user authentication and authorization,
+                            metadata management, and API integrations with external systems.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>Music Streaming</h4>
+                        <hr>
+                        <p>Our technical expertise in developing music streaming apps includes audio encoding and decoding, audio streaming protocols (such as HLS or DASH), content caching and buffering, playlist management, audio equalization and effects,
+                            audio fingerprinting and recognition, and integration with music recommendation algorithms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 0%;">
+                <div class="col-lg-3">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>Photo & Video Editing</h4>
+                        <hr>
+                        <p>We specialize in technical development for photo and video editing apps, including features for image and video processing algorithms, filters and effects implementation, video editing tools (trimming, cropping, merging), real-time
+                            preview and rendering, and integration with cloud storage services for seamless media synchronization. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>Online Gaming
+                        </h4>
+                        <hr>
+                        <p>We provide game engine integration (Unity, Unreal Engine), multiplayer server development, real-time communication (voice and chat), game physics simulation, AI opponent development, in-app purchase integration, leaderboard implementation,
+                            and backend infrastructure for game data storage and synchronization.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 0%;">
+                <div class="col-lg-3">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>Aggregator Platforms</h4>
+                        <hr>
+                        <p>We built aggregator platforms that includes data scraping and crawling, API integration with various content sources, content classification and recommendation algorithms, content caching and delivery optimization, search functionality
+                            implementation, and personalized content delivery based on user preferences. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>Social Networking
+                        </h4>
+                        <hr>
+                        <p>Our certified experts build social media apps, including user authentication and authorization mechanisms, real-time messaging and chat features, push notification services, social media API integration, user profile management,
+                            content sharing functionality, and data encryption for secure communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-top: 3%;">
+        <h1>Our custom <strong style="color:blue;">media and entertainment</strong> app development services</h1>
+        <!-- <h7>With our expertise and deep understanding of FMCG business models, we can help streamline your operations, optimize processes, and drive growth.</h7> -->
+    </div>
+
+    <div style="padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/media-entertainment.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Media & Entertainment App Development</strong></h4>
+                        <p>Along with seasoned and certified experts across tech stacks, we develop custom web portals and applications for OTT, music streaming, photo & video editing and sharing, online gaming, social networking, news & journalism, and
+                            live events & streaming.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/content-recommendation-algorithms.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Content Recommendation Algorithms</strong></h4>
+                        <p>Leveraging machine learning and data analytics, we develop personalized content recommendation algorithms that enhance user engagement by suggesting relevant content based on user preferences and behavior. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/social-media-integration.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">
+                            Social Media Integration
+                        </strong></h4>
+                        <p>We integrate social media APIs (such as Facebook, Twitter, and Instagram) to enable seamless sharing of media content, social interactions, and social login capabilities within the app.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/cloud-storage.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Cloud Storage and Synchronization</strong></h4>
+                        <p>We leverage cloud storage services (such as Amazon S3 or Google Cloud Storage) to securely store media files, facilitate seamless synchronization across devices, and ensure data backup and recovery capabilities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/video-transcoding.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Video Transcoding and Streaming Optimization</strong></h4>
+                        <p>Our media and entertainment app development services include implementing efficient video transcoding techniques and optimizing video streaming protocols (such as HLS or DASH) to deliver high-quality video content seamlessly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/DRM.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Digital Rights Management (DRM) Implementation</strong></h4>
+                        <p>We integrate robust DRM solutions to protect copyrighted content and ensure secure distribution and playback on various devices and platforms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/Audio-processing.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Audio Processing and Effects</strong></h4>
+                        <p> Our technical expertise extends to developing advanced audio processing algorithms, implementing audio effects, and ensuring optimal audio quality for music and audio streaming apps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/real-time.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">
+                            Real-time Content Updates
+                        </strong></h4>
+                        <p> We enable real-time content updates by integrating APIs and services that facilitate dynamic content delivery, ensuring users have access to the latest media content and updates.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- next-industry-link -->
+    <div class="next-industry-main">
+        <div style="height: 100px;">
+            <div class="container">
+                <div class="next-industry-block">
+                    <div class="row next-industry-image">
+                        <p style="color: white; display: block; top: 70%; position: relative; left: 15px;">Healthcare IT solutions</p>
+                        <div class="col-sm-6" style="left:60px">
+                            <img src="/Images/medical-banner2.png" class="img-fluid" alt="Medical Banner">
+                        </div>
+                        <div>
+                            <h3>Healthcare IT solutions</h3>
+                            <p>Our experts have helped countless healthcare organizations with quality-driven healthcare IT services.</p>
+                            <a href="/templates/Industries/Healthcare.html">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="next-industry">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2>Know about Other Services</h2><br>
+                        <p>As one of the top-rated mobile application companies in the USA and India, our flexible, scalable, and cost-effective services give access to expert engineering teams, build innovative apps utilizing the latest tech stacks, and
+                            implement the validated application development practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
+        <h3>If you are looking to implement any of the above Solutions or Industry Specific Solutions, we are happy to help you!</h3>
+        <div class="button-container mt-auto" style="padding-top: 2%;">
+            <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                Get a Free Quote   <span class="btn-arrow-icon">&#10148;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sub-footer py-3 bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="/Images/indeft_logo.png "><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced resources
+                    we have become a trusted name and a global IT Solution and Services Partner for our clients.
+                </div>
+                <div class="col-md-3 ">
+                    <h5>About</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">Leadership Team</a></li>
+                        <li><a href="# ">Our Development Process</a></li>
+                        <li><a href="# ">Careers</a></li>
+                        <li><a href="# ">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Services</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">Android App Development</a></li>
+                        <li><a href="# ">iOS App Development</a></li>
+                        <li><a href="# ">Hybrid App Development</a></li>
+                        <li><a href="# ">Web Development</a></li>
+                        <li><a href="# ">Trending JS Framework</a></li>
+                        <li><a href="# ">ECommerce & CMS</a></li>
+                        <li><a href="# ">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Get in Touch</h5><br>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
+                        <p class="address-line ">Office No. 302 4th Floor,</p>
+                        <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
+                        <p class="address-line ">Sus Road Pune – 411021</p>
+                    </div>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
+                        <p class="address-line ">Registered Office D-001,</p>
+                        <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
+                        <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="horizontal-line "></div>
+
+        <div class="container text-left ">
+            <div class="d-flex justify-content-between align-items-center ">
+                <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
+                <div>
+                    <i class="bi bi-linkedin fs-3 mx-2 "></i>
+                    <i class="bi bi-facebook fs-3 mx-2 "></i>
+                    <i class="bi bi-instagram fs-3 mx-2 "></i>
+                    <i class="bi bi-youtube fs-3 mx-2 "></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS (optional, for toggling functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <script>
+        document.getElementById("contactBtn").addEventListener("click", function() {
+            // Navigate to the contact.html page
+            window.location.href = "/templates/contact_us.html";
+        });
+    </script>
+
+</body>
+
+</html>

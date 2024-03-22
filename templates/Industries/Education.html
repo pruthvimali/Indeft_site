@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Footer</title>
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this line to include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        .main-image {
+            background: linear-gradient(to bottom, rgb(6, 6, 133), rgb(6, 6, 133));
+            background-size: 220vh 65vh;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        
+        .vertical-line {
+            border-left: 1px solid #e0dfdf;
+            height: 100x;
+        }
+        
+        .info-block {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-image">
+        <!-- navbar starts-------------- -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
+            <a class="navbar-brand" href="/templates/Home.html">
+                <img src="/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">SOFTWARE DEVELOPMENT</a>
+                            <a class="dropdown-item" href="#">MANAGED HOSTING SERVICES</a>
+                            <a class="dropdown-item" href="#">IT SECURITY SERVICES</a>
+                            <a class="dropdown-item" href="#">MANAGED SERVICES (REMOTE + ONSITE)</a>
+                            <a class="dropdown-item" href="#">PARTNER BASED SERVICES</a>
+                            <a class="dropdown-item" href="#">PROJECT SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Industries
+                    </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
+                            <a class="dropdown-item" href="/templates/Industries/Healthcare.html">Healthcare</a>
+                            <a class="dropdown-item" href="/templates/Industries/Logistics.html">Logistics</a>
+                            <a class="dropdown-item" href="/templates/Industries/eCommerse.html">e-Commerce</a>
+                            <a class="dropdown-item" href="/templates/Industries/FMCG.html">FMCG</a>
+                            <a class="dropdown-item" href="/templates/Industries/Food.html">Food & Restaurant</a>
+                            <a class="dropdown-item" href="/templates/Industries/Education.html">Education/ e-Learning</a>
+                            <a class="dropdown-item" href="/templates/Industries/travel.html">Travel & Hospitality</a>
+                            <a class="dropdown-item" href="/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
+                            <a class="dropdown-item" href="/templates/Industries/Entertainment.html">Entertainment</a>
+                        </div>
+
+
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends-------------- -->
+
+
+        <div class="container" style="padding-top: 1%;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="text" style="color: white;"><br><br><br>
+                        <h2>eLearning software development services</h2><br>
+                        <p>We help you create engaging and goal-driven education and eLearning apps for colleges, schools, universities and enterprises</p>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="padding-top: 2%;">
+                    <div class="image-container">
+                        <img src="/Images/eLearning.svg" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row square-block info-block" style="background-color: white;">
+                <div class="content col-lg-9" style=" position: relative; top:50px;">
+                    <p>At Indeft, we know the challenges clouding the online education realm, which is why our software development competence can help you take the lead in the very opportunistic e-learning market.</p>
+                </div>
+                <div class="vertical-line "></div>
+                <div class="col-lg-2">
+                    <div class="image-container" style="padding-left: 5%;">
+                        <img src="/Images/headfone.png" alt="Your Image">
+                    </div>
+                    <div class="button-container mt-auto">
+                        <button type="button" class="btn btn-primary btn-arrow" style="width: 200px;">
+                            Talk to our Experts  <span class="btn-arrow-icon">&#10148;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h3>Develop custom learning experiences with eLearning development services</h3>
+                    <p>We build e-learning portals, schools, colleges, educational institutes, management institutes, and other service providers. From customization to implementing innovative features that assist a learner, our certified education and eLearning
+                        experts can do it all. Our custom eLearning software development services create solutions, personalised by design and functionality, to assure cost efficiency, boost user retention and satisfaction. Our tailored education and
+                        eLearning development services cater to needs across schools, universities, K-2, professional education and corporate training.</p>
+                </div>
+                <div class="col-lg-2" style="left: 10%;">
+                    <img src="/Images/gr_eLearning.svg" style="width: 200%; height: 80%;" alt="Your Image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container text-center" style="padding-bottom: 3%;">
+            <h2>Talk to our experts for a custom quote</h2>
+            <div class="button-container mt-auto" style="padding-top: 2%;">
+                <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                    Consult Now   <span class="btn-arrow-icon">&#10148;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main containt starts -->
+    <div style="background-color: #e0dfdf; padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="blue-box">
+                        <p>The education and eLearning segments we serve</p>
+                        <p>We provide strategic guidance for the following education and learning institutions</p>
+                    </div>
+                    <div class="image-container" style="padding-top:15%;">
+                        <img src="/Images/development-opportunity-strategy-improvement-word.png" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>K-12</h4>
+                        <hr>
+                        <p>Our eLearning software development services assist K-12 institutions in harnessing the potential of technology-enhanced learning and implement modern learning practices. Our experts certified across a range of tech stacks provide
+                            comprehensive educational software solutions that streamline workflow automation, simplify student performance management, and enhance knowledge delivery.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>College & Universities</h4>
+                        <hr>
+                        <p>As a leading eLearning software development solution provider, we can help you develop custom products from scratch, implement all the learning modules you want, and allow easy authoring and uploading of content. Our personalised
+                            eLearning solutions help you garner student interests, optimise learning schedules, and gain actionable insights about a student’s academic performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 0%;">
+                <div class="col-lg-3">
+                    <div class="box">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>Corporate & Non-Profits</h4>
+                        <hr>
+                        <p>We help you transform professional learning experiences into a seamless and engaging one with our detail-driven learning management software services. We deep dive into your learning program specifics and tailor our eLearning solutions
+                            to support your corporate training programs with the right technology and deliver superior learning experiences to every team member.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="white-block" style="height: 90%;">
+                        <h4>EdTech And ELearning Companies
+                        </h4>
+                        <hr>
+                        <p>If you’re already leveraging an EdTech platform, we can help enrich your eLearning software with AI-centric analytics, machine learning, natural language processing, and augmented analytics amongst a few. Our eLearning managed
+                            services dedicate certified experts to your business case to deliver stellar functionality and user experiences and boost learner retention.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-top: 3%;">
+        <h1>Our custom <strong style="color:blue;">education and eLearning</strong> development services</h1>
+        <!-- <h7>With our expertise and deep understanding of FMCG business models, we can help streamline your operations, optimize processes, and drive growth.</h7> -->
+    </div>
+
+    <div style="padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/test-engine.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Test Assessment Engine</strong></h4>
+                        <p>Our advanced assessment engines utilize AI algorithms and machine learning techniques to automate grading, generate detailed performance analytics, and offer adaptive assessments, ensuring accurate and efficient evaluation of students'
+                            knowledge and progress. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/course-digitalization.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Course Digitization</strong></h4>
+                        <p>We transform traditional educational content into digital formats, leveraging OCR, document digitization, and CMS technologies. This enables seamless access, distribution, and customization of educational materials across multiple
+                            devices, enhancing the learning experience. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/LMS.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">
+                            Learning Management Systems (LMS)
+                        </strong></h4>
+                        <p>Our robust LMS platforms feature comprehensive functionalities such as content authoring, curriculum management, learner analytics, and social collaboration tools. This facilitates seamless online course delivery, progress tracking,
+                            and effective communication between educators and students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/e-learning.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">E-Learning Portals</strong></h4>
+                        <p>We develop interactive e-learning portals with engaging user interfaces, multimedia content integration, and personalized learning paths. Leveraging Learning Experience Platforms (LXP), gamification, and VR/AR technologies, we
+                            create immersive educational experiences that captivate learners. </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/oil-service6.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Online Examination Portals</strong></h4>
+                        <p>Our secure and scalable online examination portals support features like proctoring, timed assessments, question randomization, and real-time result generation. Employing secure browsers, facial recognition, and plagiarism detection
+                            algorithms, we ensure the integrity of online examinations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/Virtual-Event-Portals.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Virtual Event Portals</strong></h4>
+                        <p>We create immersive virtual event platforms with features like customizable virtual environments, attendee registration and management, live streaming, video conferencing, and interactive chat functionalities and real-time analytics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/measurement-analysis.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">Measurement & Analytics</strong></h4>
+                        <p> We leverage key performance indicators (KPIs), learning management system (LMS) data, and business intelligence platforms to provide actionable insights, measure training impact, and optimize learning strategies.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="white-block" style="text-align: center; height: 80%;">
+                        <img src="/Images/it-managed-service.png" style="height: 15%;">
+                        <hr>
+                        <h4><strong style="color:rgb(68, 68, 183);">
+                            IT Managed Services
+                        </strong></h4>
+                        <p> We offer proactive monitoring, patch management, and network security services using technologies like intrusion detection systems (IDS), firewalls, and antivirus software to ensure smooth operation of systems and apps via performance
+                            optimization, data backups, and disaster recovery solutions.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- next-industry-link -->
+    <div class="next-industry-main">
+        <div style="height: 100px;">
+            <div class="container">
+                <div class="next-industry-block">
+                    <div class="row next-industry-image">
+                        <p style="color: white; display: block; top: 70%; position: relative; left: 15px;">Healthcare IT solutions</p>
+                        <div class="col-sm-6" style="left:60px">
+                            <img src="/Images/medical-banner2.png" class="img-fluid" alt="Medical Banner">
+                        </div>
+                        <div>
+                            <h3>Healthcare IT solutions</h3>
+                            <p>Our experts have helped countless healthcare organizations with quality-driven healthcare IT services.</p>
+                            <a href="/templates/Industries/Healthcare.html">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="next-industry">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2>Know about Other Services</h2><br>
+                        <p>As one of the top-rated mobile application companies in the USA and India, our flexible, scalable, and cost-effective services give access to expert engineering teams, build innovative apps utilizing the latest tech stacks, and
+                            implement the validated application development practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
+        <h3>If you are looking to implement any of the above Solutions or Industry Specific Solutions, we are happy to help you!</h3>
+        <div class="button-container mt-auto" style="padding-top: 2%;">
+            <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                Get a Free Quote   <span class="btn-arrow-icon">&#10148;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sub-footer py-3 bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="/Images/indeft_logo.png "><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced resources
+                    we have become a trusted name and a global IT Solution and Services Partner for our clients.
+                </div>
+                <div class="col-md-3 ">
+                    <h5>About</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">Leadership Team</a></li>
+                        <li><a href="# ">Our Development Process</a></li>
+                        <li><a href="# ">Careers</a></li>
+                        <li><a href="# ">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Services</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">Android App Development</a></li>
+                        <li><a href="# ">iOS App Development</a></li>
+                        <li><a href="# ">Hybrid App Development</a></li>
+                        <li><a href="# ">Web Development</a></li>
+                        <li><a href="# ">Trending JS Framework</a></li>
+                        <li><a href="# ">ECommerce & CMS</a></li>
+                        <li><a href="# ">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Get in Touch</h5><br>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
+                        <p class="address-line ">Office No. 302 4th Floor,</p>
+                        <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
+                        <p class="address-line ">Sus Road Pune – 411021</p>
+                    </div>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
+                        <p class="address-line ">Registered Office D-001,</p>
+                        <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
+                        <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="horizontal-line "></div>
+
+        <div class="container text-left ">
+            <div class="d-flex justify-content-between align-items-center ">
+                <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
+                <div>
+                    <i class="bi bi-linkedin fs-3 mx-2 "></i>
+                    <i class="bi bi-facebook fs-3 mx-2 "></i>
+                    <i class="bi bi-instagram fs-3 mx-2 "></i>
+                    <i class="bi bi-youtube fs-3 mx-2 "></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS (optional, for toggling functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <script>
+        document.getElementById("contactBtn").addEventListener("click", function() {
+            // Navigate to the contact.html page
+            window.location.href = "/templates/contact_us.html";
+        });
+    </script>
+
+</body>
+
+</html>
