@@ -94,6 +94,29 @@ body {
     margin-right: 5px;
 }
 
+.blue-box {
+    background-color: #2d93f8;
+    padding: 5% 5% 5% 5%;
+}
+
+.white-block {
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* border-radius: 10px; */
+    text-align: left;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 100%;
+    border-radius: 4%;
+    /* box-shadow: 8px 8px 8px 8px rgba(0.1, 0.1, 0.1, 0.1); */
+}
+
+.white-block:hover {
+    box-shadow: 4px 4px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+    transform: scale(1.03);
+    transition: 0.3s all ease-in-out;
+}
+
 .stretched-menu {
     min-width: 1000vw;
     /* left: 0 !important; */
@@ -167,4 +190,79 @@ body {
 .Contact_us_over_image {
     height: auto;
     left: 100vh;
+}
+
+.hover-image {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hover-image:hover {
+    transition: 0.7s ease-in-out;
+    transform: scale(1.2);
+}
+
+.btn-arrow .btn-arrow-icon {
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+
+.btn-arrow:hover .btn-arrow-icon {
+    display: inline-block;
+}
+
+.box:hover {
+    background-color: #e0dfdf;
+    /* Change background color on hover */
+    animation: blink 1s infinite alternate;
+    /* Add blinking animation on hover */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.box:hover {
+    background-color: #e0dfdf;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.next-industry-block {
+    left: 100px;
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    height: 360px;
+    width: 33%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 60%;
+}
+
+.next-industry {
+    background-color: #2d2db4;
+    background-size: 220vh 10vh;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.next-industry-image {
+    height: 170px;
+    background-color: #2d2db4;
+    margin: 0;
 }
