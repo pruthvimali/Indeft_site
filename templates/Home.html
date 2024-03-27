@@ -4,163 +4,555 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Navbar with Footer</title>
-    <!-- Bootstrap-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add this line to include Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Document</title>
 
-    <link rel="stylesheet" href="/Indeft_site/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Indeft_site/styles/style2.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
 </head>
 
 <body>
 
-    <!-- navbar starts-------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
-        <a class="navbar-brand" href="/Indeft_site/templates/Home.html">
-            <img src="/Indeft_site/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="/Indeft_site/images/logo.png" alt="..." style="width: 70px; height: 70px; border-radius: 50%;" />
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item  dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                      </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/webapp.html">WEB Application DEVELOPMENT</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/mobdev.html">Mobile  Application DEVELOPMENT</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/devops.html">Mobile  Application DEVELOPMENT</a>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1"
+                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="overflow: hidden;">
 
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/supportAndMaintenance.html">Support and Maintenance</a>
-
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/LegacyMigration.html">Legacy Application Migration</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/BiReporting.html">Bi & Reporting Services</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/AgileProductDev.html">Agile Product Development</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Services/SoftwareTechnologyConsulting.html">Software Technology Consulting</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Industries
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/Healthcare.html">Healthcare</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/Logistics.html">Logistics</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/eCommerse.html">e-Commerce</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/FMCG.html">FMCG</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/Food.html">Food & Restaurant</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/Education.html">Education/ e-Learning</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/travel.html">Travel & Hospitality</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
-                        <a class="dropdown-item" href="/Indeft_site/templates/Industries/Entertainment.html">Entertainment</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
-                </li>
-                <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
-
-            </ul>
-        </div>
-    </nav>
-    <!-- navbar ends-------------- -->
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="border:red;">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item d-flex mt-10">
+                            <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-toggle" style="">Industries</a>
+                          <!-- Mega menu -->
+                          <div class="mega-menu">
+                            <div class="container" style="">
+                                <div class="row" style="">
+                                    <div class="industries_megamenu col-md-8"style="">
 
 
-    <!-- Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Main Content</h1>
-                <p>This is the main content area.</p>
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Logistic</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Oil</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Health Care</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                        <!-- Your content for the 8-column section -->
+                                        <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Education</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Education</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Education</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">E-Commerce</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Logistic</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Oil</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style=""id="megaimg">
+                                        <div class="card-body" style="position: absolute;">
+                                          <p class="card-text">Health Care</p>
+                                          <a href="#" class="ricon"><span>&#8594;</span> </i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div style="border-left: solid rgb(0, 255, 183) 10px; background-color: rgb(203, 247, 255); ">
+                                        <p> </p><p style="color: black; margin-left: 10px;">Our first-hand experience in partnering with industries across the globe has diversified our rich expertise in delivering innovative IT solutions to clients, from startups to giants. </p>
+                                      </div>
+                                    </div>
+                                    <div class="industries_megamenu col-md-4"style="">
+                                      <!-- Your content for the 8-column section -->
+                                      <!-- education -->
+                                      <div class="card" style="">
+
+                                        <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="object-fit: cover;width: 100%; height: 100%;"id="">
+                                        
+                                      </div>
+
+                                  </div>
+                                 
+                                </div>
+                            </div>
+                          </div>
+                        
+                      </li>
+
+
+                      <!-- Services -->
+                      <li>
+                        <a href="#" class="dropdown-toggle" style="">Services</a>
+                        <!-- Mega menu -->
+                        <div class="mega-menu">
+                            <div class="container" style="">
+                                <div class="row" style="">
+                                    <!-- colmns-4 -->
+                                    <div class="industries_megamenu col-md-4" style="border-right: solid 10px rgba(47, 0, 255, 0.199); position: relative;">
+                                            <div class="card-body" style="width: 100%; position: relative; gap: 5px; align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);"><hr>
+                                                <img src="/Indeft_site/images/digital_transformation_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                                
+                                                <a class="nav-link active" href="#" style="color: black; font-size: 17px;" id="dt">Digital Transformation</a>
+                                            </div>
+                                       
+                                       
+                                          <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                              <img src="/Indeft_site/images/end-end-product-eng-removebg-preview.png" alt="" style="width: 10%;">
+                                              <hr>
+                                              <a class="nav-link" href="#" style="color: black;font-size: 17px;"id="end">End to End Product Engineering</a>
+                                          </div>
+                                          <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                            <img src="/Indeft_site/images/business_trans_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                            <hr>
+                                            <a class="nav-link" href="#" style="color: black;font-size: 17px;"id="bt">Business Transformation</a>
+                                        </div>
+                                        <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent;">
+                                          <img src="/Indeft_site/images/cloud_service_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                          <hr>
+                                          <a class="nav-link" href="#" style="color: black;font-size: 17px;"id="cs">Cloud Service</a>
+                                      </div>
+                                    </div>
+                    
+                                    <!-- colmns-8 -->
+                    
+                                    <div class="industries_megamenu col-md-4" style="" id="servicerightblock1">
+                                       <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                          <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                            <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                            <a href="#" style="color: black;">Web Application Development</a>
+                                          </div>
+                                          <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                            <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                            <a href="#" style="color: black;">Mobile Application Development</a>
+                                          </div>
+                                          <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                            <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                            <a href="#" style="color: black;">DevSecOps</a>
+                                          </div>
+                                          <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                            <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                            <a href="#" style="color: black;">Legacy App Migration</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- End-end -->
+                                    <div class="industries_megamenu col-md-4" style="" id="servicerightblock2">
+                                      <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                         <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                           <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                           <a href="#" style="color: black;">Software Technology</a>
+                                         </div>
+                                         <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                           <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                           <a href="#" style="color: black;">UI/UX</a>
+                                         </div>
+                                         <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                           <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                           <a href="#" style="color: black;">Support and Maintance</a>
+                                         </div>
+                                         <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                           <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                           <a href="#" style="color: black;">Hire dedicated Resources</a>
+                                         </div>
+                                         <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                          <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                          <a href="#" style="color: black;">Agile Product Development</a>
+                                        </div>
+                                      </div>
+                                      <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                        <a href="#" style="color: black;">Blockchain App Development</a>
+                                      </div>
+                                      <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                        <a href="#" style="color: black;">Offshore Development Services</a>
+                                      </div>
+                                   </div>
+                                   <!-- business Trans -->
+                                   <div class="industries_megamenu col-md-4" style="" id="servicerightblock3">
+                                    <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                       <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                         <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                         <a href="#" style="color: black;">Robotic Process Automation</a>
+                                       </div>
+                                       <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                         <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                         <a href="#" style="color: black;">BI & Reporting Services</a>
+                                       </div>
+                                       <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                         <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                         <a href="#" style="color: black;">Mobile App & Web Analytics</a>
+                                       </div>
+                                       <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                         <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                         <a href="#" style="color: black;">SAP Implementation & Support</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Cloud Service -->
+                                 <div class="industries_megamenu col-md-4" style="" id="servicerightblock4">
+                                  <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                     <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                       <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                       <a href="#" style="color: black;">Cloud Development & Migration </a>
+                                     </div>
+                                     <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                       <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                       <a href="#" style="color: black;">Cloud Managed Services</a>
+                                     </div>
+                                     
+                                  </div>
+                               </div>
+                                    <!-- col-4 -->
+                                    
+                                    <div class="industries_megamenu col-md-4" style="" id="servicerightblock">
+                                      <div class="servicesblockimg" style="display: flex;">
+                                         <img src="/Indeft_site/images/carosel_img2.jpg" alt="" width="100%">
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    </ul>
+                </div>
             </div>
         </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<!-- 
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div> -->
+
+        <div class="carousel-inner">
+
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="/Indeft_site/images/carosel_img1.jpg" id="c-img" alt="...">
+                <!-- Overlay -->
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.836);">
+                    <!-- Content -->
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-12" style="">
+                                <div class="row align-items-center" style="">
+                                    <!-- Image Column -->
+                                    <div class="col-4" style="">
+                                        <img src="/Indeft_site/images/caroimg1-removebg-preview.png" alt="..."
+                                            class="overimg img-fluid animated bounceInLeft style="border: 10px; object-fit: contain; animation-delay: 1s;">
+                                    </div>
+                                    
+
+                                    
+                                    <!-- Text Column -->
+                                    <div class="col-8 text-start" style="">
+                                        <h1 class="head1 font-weight-bold animated bounceInLeft"
+                                            style="color: rgba(0, 255, 255, 0.822);animation-delay: .1s;"><strong> Solution
+                                                for<strong style="color: rgb(0, 213, 255);">__</strong></strong></h1>
+                                        <h1 class="head2 animated bounceInLeft font-italic font-weight-bold text-white" style="animation-delay: .2s;">EHS
+                                            Industry</h1>
+                                        <h1 class="head3 text-primary ania animated bounceInLeft" style="animation-delay: .3s;">For People Safety & Better
+                                            Compliance</h1>
+                                            <div class="divbtn d-block flex-column" style="">
+                                              <button class="btn btn-primary font-italic btn-arrow mb-2" type="button"
+                                                  style="">
+                                                  WPS ERP Brochure <span class="btn-arrow-icon">&#10148;</span>
+                                              </button>
+                                              <button class="btn btn-danger mb-2" style="" type="button">Know More</button>
+                                          </div>
+                                          
+                                    </div>
+                                </div>
+                            </div>
+<p> </p>
+
+                            <div class="cont-nascom mb-2 d-block text-end mt-10"style="">
+                                <img src="/Indeft_site/images/Cmmidev3.bmp" alt="..."
+                                    class="nascomimg" style="border: 5px solid transparent;">
+                                <img src="/Indeft_site/images/nascomMember.bmp" alt="..."
+                                    class="nascomimg"style="border: 5px solid transparent;">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/Indeft_site/images/carosel_img2.jpg" id="c-img" alt="...">
+                <!-- Overlay -->
+                <div class="overlay" style="background-color: rgba(0, 0, 0, 0.751);">
+                  <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12" style="">
+                            <div class="row align-items-center" style="">
+                                <!-- Image Column -->
+                                <div class="col-4" style="">
+                                    <img src="/Indeft_site/images/serving-industry-banner.png" alt="..."
+                                        class="overimg img-fluid animated bounceInLeft" style="border: 10px; object-fit: contain; animation-delay: .3s;">
+                                </div>
+                                <!-- Text Column -->
+
+
+                                <div class="col-8 text-start" style="">
+                                    <h1 class="head1 font-weight-bold animated bounceInLeft"
+                                        style="color: rgba(0, 255, 255, 0.822); animation-delay: .1s;"><strong> Serving Industry</strong></h1>
+                                    <h1 class="head2 animated__bounceInLeft font-italic font-weight-bold text-primary">Leaders and Startups</h1>
+                                    <h1 class="head3 text-pink">Value-Driven Solutions</h1>
+                                        
+                                      
+                                </div>
+                            </div>
+                        </div>
+<p> </p>
+                        <div class="  mb-2 d-block text-end"style="">
+                            <img src="/Indeft_site/images/Cmmidev3.bmp" alt="..."
+                                class="nascomimg" style="border: 5px solid transparent; height: auto; width: 120px;">
+                            <img src="/Indeft_site/images/nascomMember.bmp" alt="..."
+                                class="nascomimg img-fluid "style="border: 5px solid transparent; height: auto; width: 120px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Item 3 -->
+      
+        </div>
+
     </div>
 
 
-    <!-- Footer -->
-    <footer class="sub-footer py-3 bg-dark">
+    <!-- 2d section -->
+    <section style="border-bottom: 10px red solid;">
+      <div class="secondsection_cont">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="/Indeft_site/Images/indeft_logo.png"><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced
-                    resources we have become a trusted name and a global IT Solution and Services Partner for our clients.
-                </div>
-                <div class="col-md-3">
-                    <h5>About</h5><br>
-                    <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Leadership Team</a></li>
-                        <li><a href="#">Our Development Process</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Services</h5><br>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Android App Development</a></li>
-                        <li><a href="#">iOS App Development</a></li>
-                        <li><a href="#">Hybrid App Development</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Trending JS Framework</a></li>
-                        <li><a href="#">ECommerce & CMS</a></li>
-                        <li><a href="#">Analytics</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Get in Touch</h5><br>
-                    <div class="address">
-                        <h6><i class="bi bi-geo-alt-fill"></i> Branch Office</h6>
-                        <p class="address-line">Office No. 302 4th Floor,</p>
-                        <p class="address-line">M ARCH Center Beside Audi Showroom</p>
-                        <p class="address-line">Sus Road Pune – 411021</p>
-                    </div>
-                    <div class="address">
-                        <h6><i class="bi bi-geo-alt-fill"></i> Registered Office</h6>
-                        <p class="address-line">Registered Office D-001,</p>
-                        <p class="address-line">Dhruv Tara C.H.S Plot No 18,</p>
-                        <p class="address-line">Sector 20 Airoli Navi Mumbai – 400708</p>
-                    </div>
-                </div>
-
+          <div class="row">
+            <div class="col-md-5 sec_text">
+              <h3 style="font-weight: 600;">A leading IT company with a <strong style="color: aqua;">Global Outlook</strong></h3><br>
+              <p>As a leading-edge CMMI Level 3 Certified IT Company, 
+                we help organizations identify business challenges, 
+                explore relevant solutions, 
+                and lead this change through innovation, <strong>Digital Transformation</strong>, and competitive solutions. 
+              </p><p></p>
+              <p>Triazine Software has been at the forefront of information technology, 
+                <strong>Software Development</strong>, and consulting solutions with offices in India and South Africa. 
+              </p><p></p>
+              <p>We are one of the leading IT transformation organizations, 
+                focused on building an innovative future driven by quality software solutions, 
+                fewer business challenges, and infinite business growth.
+              </p><p></p>
+              <div class="btn btn-primary" style="padding: 10px 50px 10px 50px;">
+                <a href="aboutus"></a>Know More</div>
             </div>
-        </div>
-        <div class="horizontal-line"></div>
+    
+            <div class="col-md-7 sec_card position-relative">
+              <img src="/Indeft_site/images/cmp-removebg-preview.png" alt="..." style="height: 80%;width: 80%; position: absolute;">
+        
+    
+              <div class="card_cont_2 d-flex flex-wrap justify-content-center">
+                <div class="firstcard_sec2">
+                  <div class="card m-1 shadow" style="width: 300px; background-color: rgba(72, 39, 255, 0.659);">
+                    <div class="card-body" id="sec_cont_card" style="background-color: transparent; border-radius: 50px;height: auto; width: auto;">
 
-        <div class="container text-left">
-            <div class="d-flex justify-content-between align-items-center">
-                <span class="text-light">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
-                <div>
-                    <i class="bi bi-linkedin fs-3 mx-2"></i>
-                    <i class="bi bi-facebook fs-3 mx-2"></i>
-                    <i class="bi bi-instagram fs-3 mx-2"></i>
-                    <i class="bi bi-youtube fs-3 mx-2"></i>
+
+                      <img src="/Indeft_site/images/roket-removebg-preview.png" alt="" style="height: 50px; width: auto;"><hr>
+                      <h5 class="card-title" style="font-weight: 900; font-size: 53px; color: aquamarine;">500+</h5>
+                      <p class="card-text"></p>
+                      
+                      <p style="font-style: normal; color: rgb(255, 255, 255);">Project Delivered</p>
+                    </div>
+                  </div>
                 </div>
+    
+                <div class="seccard_sec2">
+                  <div class="card m-2 shadow" style="width: 300px; background-color: rgba(35, 200, 255, 0.671);">
+                    <div class="card-body" id="sec_cont_card" style="background-color: transparent; border-radius: 50px;height: auto; width: auto;">
+
+
+                      <img src="/Indeft_site/images/meadalicon-removebg-preview.png" alt="" style="height: 50px; width: auto;"><hr>
+                      <h5 class="card-title" style="font-weight: 900; font-size: 53px; color: aquamarine;">12+</h5>
+                      <p class="card-text"></p>
+                      
+                      <p style="font-style: normal; color: rgb(255, 255, 255);">Year Of Experience</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="thirdcard_sec2">
+                  <div class="card m-3 shadow" style="width: 300px; background-color: rgba(137, 43, 226, 0.592);">
+                    <div class="card-body" id="sec_cont_card" style="background-color: transparent; border-radius: 50px;height: auto; width: auto;">
+
+
+                      <img src="/Indeft_site/images/clienticon-removebg-preview.png" alt="" style="height: 50px; width: auto;"><hr>
+                      <h5 class="card-title" style="font-weight: 900; font-size: 53px; color: rgb(0, 255, 170);">300+</h5>
+                      <p class="card-text"></p>
+                      
+                      <p style="font-style: normal; color: rgb(255, 255, 255);">Client Served</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="fourthcard_sec2">
+                  <div class="card m-4 shadow" style="width: 300px; background-color: rgba(255, 57, 57, 0.647);">
+                    <div class="card-body" id="sec_cont_card" style="background-color: transparent; border-radius: 50px; height: auto; width: auto;">
+
+
+                      <img src="/Indeft_site/images/Design-thinking-icon-removebg-preview.png" alt="" style="height: 100px; width: auto;"><hr>
+                      <h5 class="card-title" style="font-weight: 900; font-size: 53px; color: aquamarine;">150+</h5>
+                      <p class="card-text"></p>
+                      
+                      <p style="font-style: normal; color: rgb(255, 255, 255);">Design Thinker</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+    
+</div>
+    <script src="/Indeft_sitehttps://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="/Indeft_sitehttps://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="/Indeft_sitehttps://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    </footer>
+    <script src="/Indeft_site/script.js"></script>
+    <script src="/Indeft_sitehttps://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-
-    <!-- Bootstrap JS (optional, for toggling functionality) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        document.getElementById("contactBtn").addEventListener("click", function() {
-            // Navigate to the contact.html page
-            window.location.href = "contact_us.html";
-        });
-    </script>
 </body>
 
 </html>
+
