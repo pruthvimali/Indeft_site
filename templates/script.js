@@ -6,14 +6,7 @@ window.onload = function() {
 $(document).ready(function() {
     $('#carouselExampleIndicators').carousel(); // Initialize carousel
 });
-// window.addEventListener('scroll', function() {
-//     var navbar = document.querySelector('.navbar');
-//     if (window.scrollY > 50) { // Change 50 to the desired scroll position
-//         navbar.style.backgroundColor = '#545'; // New background color when scrolled
-//     } else {
-//         navbar.style.backgroundColor = 'pink'; // Default background color
-//     }
-// });
+
 window.addEventListener('scroll', function () {
     var navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) { // Change 50 to the desired scroll position
