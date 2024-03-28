@@ -11,14 +11,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap Icons CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="/Indeft_site/styles/styles.css">
-	
+    <link rel="stylesheet" href="/Indeft_site/styles/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Indeft_site/styles/style2.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         .main-image {
             background: linear-gradient(to bottom, #503c4c, #a590a1);
@@ -43,74 +52,329 @@
 
     <div class="main-image">
         <!-- navbar starts-------------- -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
-            <a class="navbar-brand" href="/templates/Home.html">
-                <img src="/Indeft_site/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="/Indeft_site/images/logo.png" alt="..." style="width: 70px; height: 70px; border-radius: 50%;" />
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item  dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                      </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">SOFTWARE DEVELOPMENT</a>
-                            <a class="dropdown-item" href="#">MANAGED HOSTING SERVICES</a>
-                            <a class="dropdown-item" href="#">IT SECURITY SERVICES</a>
-                            <a class="dropdown-item" href="#">MANAGED SERVICES (REMOTE + ONSITE)</a>
-                            <a class="dropdown-item" href="#">PARTNER BASED SERVICES</a>
-                            <a class="dropdown-item" href="#">PROJECT SERVICES</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Industries
-                    </a>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="overflow: hidden;">
 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
-                            <a class="dropdown-item" href="/templates/Industries/Healthcare.html">Healthcare</a>
-                            <a class="dropdown-item" href="/templates/Industries/Logistics.html">Logistics</a>
-                            <a class="dropdown-item" href="/templates/Industries/eCommerse.html">e-Commerce</a>
-                            <a class="dropdown-item" href="/templates/Industries/FMCG.html">FMCG</a>
-                            <a class="dropdown-item" href="/templates/Industries/Food.html">Food & Restaurant</a>
-                            <a class="dropdown-item" href="/templates/Industries/Education.html">Education/ e-Learning</a>
-                            <a class="dropdown-item" href="/templates/Industries/travel.html">Travel & Hospitality</a>
-                            <a class="dropdown-item" href="/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
-                            <a class="dropdown-item" href="/templates/Industries/Entertainment.html">Entertainment</a>
-                        </div>
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="border:red;">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item d-flex mt-10">
+                                <a class="nav-link active" aria-current="page" href="/Indeft_site/templates/Home.html" id="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" style="">Industries</a>
+                                <!-- Mega menu -->
+                                <div class="mega-menu">
+                                    <div class="container" style="">
+                                        <div class="row" style="">
+                                            <div class="industries_megamenu col-md-8" style="">
 
 
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
-                    </li>
-                    <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
-                </ul>
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Oil and Gas (CGD/utility)</p>
+                                                        <a href="/Indeft_site/templates/Industries/oilAndGas.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Healthcare</p>
+                                                        <a href="/Indeft_site/templates/Industries/Healthcare.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Logistics</p>
+                                                        <a href="/Indeft_site/templates/Industries/Logistics.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- Your content for the 8-column section -->
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">e-Commerce</p>
+                                                        <a href="/Indeft_site/templates/Industries/eCommerse.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">FMCG</p>
+                                                        <a href="/Indeft_site/templates/Industries/FMCG.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Food & Restaurant</p>
+                                                        <a href="/Indeft_site/templates/Industries/Food.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Education/ e-Learning</p>
+                                                        <a href="/Indeft_site/templates/Industries/Education.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Travel & Hospitality</p>
+                                                        <a href="/Indeft_site/templates/Industries/travel.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Parking, Permit & Traffic Industry</p>
+                                                        <a href="/Indeft_site/templates/Industries/Parking.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Entertainment</p>
+                                                        <a href="/Indeft_site/templates/Industries/Entertainment.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <div style="border-left: solid rgb(0, 255, 183) 10px; background-color: rgb(203, 247, 255); ">
+                                                    <p> </p>
+                                                    <p style="color: black; margin-left: 10px;">Our first-hand experience in partnering with industries across the globe has diversified our rich expertise in delivering innovative IT solutions to clients, from startups to giants. </p>
+                                                </div>
+                                            </div>
+                                            <div class="industries_megamenu col-md-4" style="">
+                                                <!-- Your content for the 8-column section -->
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="object-fit: cover;width: 100%; height: 100%;" id="">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <!-- Services -->
+                            <li>
+                                <a href="#" class="dropdown-toggle" style="">Services</a>
+                                <!-- Mega menu -->
+                                <div class="mega-menu">
+                                    <div class="container" style="">
+                                        <div class="row" style="">
+                                            <!-- colmns-4 -->
+                                            <div class="industries_megamenu col-md-4" style="border-right: solid 10px rgba(47, 0, 255, 0.199); position: relative;">
+                                                <div class="card-body" style="width: 100%; position: relative; gap: 5px; align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <hr>
+                                                    <img src="/Indeft_site/images/digital_transformation_icon-removebg-preview.png" alt="" style="width: 10%;">
+
+                                                    <a class="nav-link active" href="#" style="color: black; font-size: 17px;" id="dt">Digital Transformation</a>
+                                                </div>
+
+
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <img src="/Indeft_site/images/end-end-product-eng-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="end">End to End Product Engineering</a>
+                                                </div>
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <img src="/Indeft_site/images/business_trans_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="bt">Business Transformation</a>
+                                                </div>
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent;">
+                                                    <img src="/Indeft_site/images/cloud_service_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="cs">Cloud Service</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- colmns-8 -->
+
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock1">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/webapp.html" style="color: black;">Web Application Development</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/mobdev.html" style="color: black;">Mobile Application Development</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/devops.html" style="color: black;">DevSecOps</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/LegacyMigration.html" style="color: black;">Legacy App Migration</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End-end -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock2">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/SoftwareTechnologyConsulting.html" style="color: black;">Software Technology consulting</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/UiUx.html" style="color: black;">UI/UX</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/supportAndMaintenance.html" style="color: black;">Support and Maintance</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/Hired.html" style="color: black;">Hire dedicated Resources</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/AgileProductDev.html" style="color: black;">Agile Product Development</a>
+                                                    </div>
+                                                </div>
+                                                <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                    <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                    <a href="/Indeft_site/templates/Services/Blockchain.html" style="color: black;">Blockchain App Development</a>
+                                                </div>
+                                                <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                    <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                    <a href="/Indeft_site/templates/Services/Offshore.html" style="color: black;">Offshore Development Services</a>
+                                                </div>
+                                            </div>
+                                            <!-- business Trans -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock3">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/rpa.html" style="color: black;">Robotic Process Automation</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/BiReporting.html" style="color: black;">BI & Reporting Services</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/MobileApp.html" style="color: black;">Mobile App & Web Analytics</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/Sap.html" style="color: black;">SAP Implementation & Support</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Cloud Service -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock4">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/CloudDevMigration.html" style="color: black;">Cloud Development & Migration </a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/CloudManService.html" style="color: black;">Cloud Managed Services</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- col-4 -->
+
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock">
+                                                <div class="servicesblockimg" style="display: flex;">
+                                                    <img src="/Indeft_site/images/carosel_img2.jpg" alt="" width="100%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- navbar ends ----------------- -->
 
 
-        <div class="container" style="padding-top: 2%;">
+        <div class="container" style="padding-top: 5%;">
             <div class="row">
                 <div class="col-lg-9">
                     <div class="text" style="color: white;"><br><br><br>
                         <h2>Achieving complete digital transformation with reliable cloud migration</h2><br>
                         <h5>Marrying your product/service USPs with impeccable and user-centric designs
-						</h5>
-						</div>
+                        </h5>
+                    </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="image-container">
+                    <div class="image-container" style="position: relative; top: 20px;">
                         <img src="/Indeft_site/Images/u1.png" alt="Your Image" class="image img-fluid hover-image">
                     </div>
                 </div>
@@ -122,252 +386,170 @@
 
         <div class="container" style="padding-top: 2%;">
             <div class="row square-block info-block" style="background-color: white; position: relative;">
-                <div class="content col-lg-9" style="position: relative; z-index: 1;">
-                    <p>A CMMI Level 3 one of the top UI/UX companies in India that drive organizational growth with their intuitive design and experience with effortless and seamless navigation. Triazine’s custom UI/UX design experts perfect your omnichannel experiences across desktop, mobile and web applications while meeting your business’ specific requirements and industry standards.
+                <div class="content col-lg-9" style="position: relative; top: 30px;">
+                    <p>A CMMI Level 3 one of the top UI/UX companies in India that drive organizational growth with their intuitive design and experience with effortless and seamless navigation. Triazine’s custom UI/UX design experts perfect your omnichannel
+                        experiences across desktop, mobile and web applications while meeting your business’ specific requirements and industry standards.
                     </p>
-					
-					<p>
-						The modern enterprise ecosystem demands you to move over your legacy systems, reduce operational costs, and breakdown data silos. As more and more organizations realize the potential of a cloud management they’re moving towards its end-to-end network.
-					</p>
-						
-					
+
+                    <p>
+                        The modern enterprise ecosystem demands you to move over your legacy systems, reduce operational costs, and breakdown data silos. As more and more organizations realize the potential of a cloud management they’re moving towards its end-to-end network.
+                    </p>
+
+
                 </div>
-                <div class="col-lg-2" style="position: absolute; top: 50%; transform: translateY(-50%); right: 5%;">
-                    <div class="image-container">
+                <div class="vertical-line col-lg-1"></div>
+                <div class="col-lg-2">
+                    <div class="image-container" style="padding-left: 0%; padding-top: 0%;position: relative; left:-50px;">
                         <img src="/Indeft_site/Images/headfone.png" alt="Your Image">
                     </div>
                     <div class="button-container mt-auto">
-                        <button type="button" class="btn btn-primary btn-arrow" style="width: 200px;">
-                            Talk to our Experts  <span class="btn-arrow-icon">&#10148;</span>
-                        </button>
+                        <a href="/Indeft_site/templates/contact_us.html" class="btn btn-primary btn-arrow" style="width: 200px;position: relative; left:-50px;">
+                            Talk to our Experts <span class="btn-arrow-icon ">&#10148;</span>
+                        </a>
                     </div>
                 </div>
-                <div class="vertical-line"></div>
             </div>
         </div>
-        
+
 
 
         <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
             <div class="row">
-                
-                    <p> 
 
-						As<span style="color: green;"> one of the best UI/UX companies in India</b></span>we’ve assisted several leading brands design and develop innovative digital user experiences that not only solve complex business problems but fulfil customer requirements and pain points.
-					</p>
-                
+                <p>
+
+                    As<span style="color: green;"> one of the best UI/UX companies in India</b></span>we’ve assisted several leading brands design and develop innovative digital user experiences that not only solve complex business problems but fulfil
+                    customer requirements and pain points.
+                </p>
+
             </div>
-			<center>
-			<h1>Reinvent your business experiences with one of the  <span style="color: blue;">best UI/UX agencies in India</span>
-			</h1>
-		</center>
-		<p>At Triazine, we combine the innovative power of technology, creativity, and personalization to design and develop captivating user experiences that boost customer satisfaction rates, brand values, and conversions. Our knack about UI/UX designs and our experience in this domain help us leverage the best tools, futuristic technologies, and innovative solutions to drive significant business success.
-		</p>
-		<p>We ideate, strategize and develop digital designs for the ever-increasing number of channels and devices. As one amongst the top UI/UX companies in India, our strong market experience, unique blend of technologies, competitive functionalities will help you forge meaningful connections with the most important asset of your business- your customers.
-		</p>
-		<center><h1> Our UI/UX design and development services</h1>
-		<p>As one of the leading top UI/UX companies in India, we understand that the key to developing a successful mobile and web application is via implementing functionalities demanded by the target audience and designing eye-catching browsing experiences that agree with business goals and set industry benchmarks. Our experts help you with just that prospect.</p>
-		</center>
-			
-		<br> <br> 
+            <center>
+                <h1>Reinvent your business experiences with one of the <span style="color: blue;">best UI/UX agencies in India</span>
+                </h1>
+            </center>
+            <p>At Triazine, we combine the innovative power of technology, creativity, and personalization to design and develop captivating user experiences that boost customer satisfaction rates, brand values, and conversions. Our knack about UI/UX designs
+                and our experience in this domain help us leverage the best tools, futuristic technologies, and innovative solutions to drive significant business success.
+            </p>
+            <p>We ideate, strategize and develop digital designs for the ever-increasing number of channels and devices. As one amongst the top UI/UX companies in India, our strong market experience, unique blend of technologies, competitive functionalities
+                will help you forge meaningful connections with the most important asset of your business- your customers.
+            </p>
+            <center>
+                <h1> Our UI/UX design and development services</h1>
+                <p>As one of the leading top UI/UX companies in India, we understand that the key to developing a successful mobile and web application is via implementing functionalities demanded by the target audience and designing eye-catching browsing
+                    experiences that agree with business goals and set industry benchmarks. Our experts help you with just that prospect.</p>
+            </center>
 
-		<div style="padding-top: 4%; padding-bottom: 1%;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="white-block" style="text-align: center; height: 80%;">
-							<img src="/Indeft_site/Images/cc11.svg" style="height: 50px; width: auto;">
-							<hr>
-							<h4><strong style="color: #0096FF">Cloud App Development</strong></h4>
-							<p>Proficient developers for developing and deploying cloud apps that can perform a variety of operations </p>
-						</div>
-					</div>
-		
-					<div class="col-lg-4">
-						<div class="white-block" style="text-align: center; height: 80%;">
-							<img src="/Indeft_site/Images/cc12.svg" style="height: 50px; width: auto;">
-							<hr>
-							<h4><strong style="color: #0096FF;">Cloud Configuration </strong></h4>
-							<p>We treat Security as an integral part of the IoT application development process
-							</p>
-						</div>
-					</div>
-		
-					<div class="col-lg-4">
-						<div class="white-block" style="text-align: center; height: 80%;">
-							<img src="/Indeft_site/Images/cc13.svg" style="height: 50px; width: auto;">
-							<hr>
-							<h4><strong style="color: #0096FF">Migration to Cloud</strong></h4>
-							<p>Our cloud migration and implementation services include creating private clouds, migration to public clouds
-							</p>
-						</div>
-					</div>
-				</div>
-		
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="white-block" style="text-align: center; height: 80%;">
-							<img src="/Indeft_site/Images/cc14.svg" style="height: 50px; width: auto;">
-							<hr>
-							<h4><strong style="color: #0096FF;">Integration services</strong></h4>
-							<p>We have expertise in integrating applications for scenarios like on-premise to cloud, cloud to on-premise, and cloud to cloud
-							</p>
-						</div>
-					</div>
-		
-					<div class="col-lg-4">
-						<div class="white-block" style="text-align: center; height: 80%;">
-							<img src="/Indeft_site/Images/cc15.svg" style="height: 50px; width: auto;">
-							<hr>
-							<h4><strong style="color: #0096FF;">SAAS</strong></h4>
-							<p>Eradicate the need of a vast infrastructure and allow the user to access application software and databases at scale. </p>
-						</div>
-					</div>
-		
-					<div class="col-lg-4">
-						<div class="white-block" style="text-align: center; height: 80%;">
-							<img src="/Indeft_site/Images/cc15.svg" style="height: 50px; width: auto;">
-							<hr>
-							<h4><strong style="color: #0096FF;">PAAS</strong></h4>
-							<p>Generating new opportunities for software development, we deliver multi-tenant applications independent of any specific platform
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-	<!-- new div-->
-	
-	<div style="background-color: black; color: white; text-align: center; padding: 20px;">
-		<h2>Our UX/UI development lifecycle</h2>
-		<hr style="width: 50%; margin: auto; border-color: white;">
-		<h5> Our unique expertise in user experience designing has helped us become one of the top UI/UX companies in India while assisting ambitious brands to tap into the UI/UX potential. Our skilled experts possess a comprehensive understanding of the process and ensure nothing short of optimum results. The process includes:</h5>
+            <br> <br>
 
-	</div>
-	<!--temp-->
+            <div style="padding-top: 4%; padding-bottom: 1%;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="white-block" style="text-align: center; height: 80%;">
+                                <img src="/Indeft_site/Images/cc11.svg" style="height: 50px; width: auto;">
+                                <hr>
+                                <h4><strong style="color: #0096FF">Cloud App Development</strong></h4>
+                                <p>Proficient developers for developing and deploying cloud apps that can perform a variety of operations </p>
+                            </div>
+                        </div>
 
-	<div style="background-color: black; color: white; padding-top: 4%; padding-bottom: 1%;">
-		<div class="container">
-			<div class="row">
-				<div class="text" style="color: white; display:flex;">
-					<div class="col-lg-6">
-						<h3>1. Research</h3>
-						<p>Before we commence the process of designing and development, we research all qualitative and quantitative aspects of it, compare it with competition, assess all your business needs and then create a blueprint accordingly.</p>
-					</div>
-					<div class="col-lg-6">
-						<h3>2. Wireframe</h3>
-						<p>The next step is developing a sustainable wireframe that includes all the core functionalities and navigation flow to decipher the final app model. It saves most of the design time and follows a solid design-based approach.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="text" style="color: white; display:flex;">
-					<div class="col-lg-6">
-						<h3>3. Design & Development</h3>
-						<p>Using all the design tools and technologies, we start by designing layouts with content, features, and functionalities. Our goal is to create unique graphics that fulfill business objectives and ensure scalability and agility.</p>
-					</div>
-					<div class="col-lg-6">
-						<h3>4. Usability Testing</h3>
-						<p>All testing procedures ensure the design and content drive engagement. This reengineered model ensures ergonomic system interfaces taking into consideration a client’s feedback as and when it comes.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="text" style="color: white; display:flex;">
-					<div class="col-lg-6">
-						<h3>5. Maintenance & Support</h3>
-						<p>Once developed, we now focus on maintaining and supporting it to ensure optimal performances, especially during peak traffic times, easy navigation, and keeping pace with the changing market trends and customer expectations.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+                        <div class="col-lg-4">
+                            <div class="white-block" style="text-align: center; height: 80%;">
+                                <img src="/Indeft_site/Images/cc12.svg" style="height: 50px; width: auto;">
+                                <hr>
+                                <h4><strong style="color: #0096FF;">Cloud Configuration </strong></h4>
+                                <p>We treat Security as an integral part of the IoT application development process
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="col-lg-4">
+                            <div class="white-block" style="text-align: center; height: 80%;">
+                                <img src="/Indeft_site/Images/cc13.svg" style="height: 50px; width: auto;">
+                                <hr>
+                                <h4><strong style="color: #0096FF">Migration to Cloud</strong></h4>
+                                <p>Our cloud migration and implementation services include creating private clouds, migration to public clouds
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="white-block" style="text-align: center; height: 80%;">
+                                <img src="/Indeft_site/Images/cc14.svg" style="height: 50px; width: auto;">
+                                <hr>
+                                <h4><strong style="color: #0096FF;">Integration services</strong></h4>
+                                <p>We have expertise in integrating applications for scenarios like on-premise to cloud, cloud to on-premise, and cloud to cloud
+                                </p>
+                            </div>
+                        </div>
 
-    <br>
-    <h1 style="color:blue;"><center>Our competitive cloud partnerships</center></h1> <br>
-<h4>
-    <center>As a leading Cloud migration partner, we support your cloud journey with these industry-leading tools, technologies, and platforms</center></h4>
-<!-- new div-->
+                        <div class="col-lg-4">
+                            <div class="white-block" style="text-align: center; height: 80%;">
+                                <img src="/Indeft_site/Images/cc15.svg" style="height: 50px; width: auto;">
+                                <hr>
+                                <h4><strong style="color: #0096FF;">SAAS</strong></h4>
+                                <p>Eradicate the need of a vast infrastructure and allow the user to access application software and databases at scale. </p>
+                            </div>
+                        </div>
 
-
-<style>
-    .image-container {
-        background-color: white;
-        padding: 20px;
-        border-radius: 20px;
-        text-align: center;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .image-container img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-</style>
-
-<div style="background-color: #D3D3D3; padding-top: 4%; padding-bottom: 1%;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="image-container">
-                    <img src="/Indeft_site/Images/cc1.svg" alt="Kubernetes">
+                        <div class="col-lg-4">
+                            <div class="white-block" style="text-align: center; height: 80%;">
+                                <img src="/Indeft_site/Images/cc15.svg" style="height: 50px; width: auto;">
+                                <hr>
+                                <h4><strong style="color: #0096FF;">PAAS</strong></h4>
+                                <p>Generating new opportunities for software development, we deliver multi-tenant applications independent of any specific platform
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="image-container">
-                    <img src="/Indeft_site/Images/aws.png" alt="AWS">
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="image-container">
-                    <img src="/Indeft_site/Images/cc2.png" alt="Docker">
-                </div>
-            </div>
+
         </div>
+        <!-- new div-->
 
-        <!--2nd row-->
+        <div style="background-color: black; color: white; text-align: center; padding: 20px;">
+            <h2>Our UX/UI development lifecycle</h2>
+            <hr style="width: 50%; margin: auto; border-color: white;">
+            <h5> Our unique expertise in user experience designing has helped us become one of the top UI/UX companies in India while assisting ambitious brands to tap into the UI/UX potential. Our skilled experts possess a comprehensive understanding of the
+                process and ensure nothing short of optimum results. The process includes:</h5>
 
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="image-container">
-                    <img src="/Indeft_site/Images/cc3.png" alt="Jenkins">
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="image-container">
-                    <img src="/Indeft_site/Images/cc4.png" alt="Jira">
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="image-container">
-                    <img src="/Indeft_site/Images/cc5.svg" alt="Git">
-                </div>
-            </div>
         </div>
+        <!--temp-->
 
-    </div>
-</div>
-<br>
-    <!-- main containt starts -->
-    
-
-    <!-- next-service-link -->
-    <div class="next-industry-main">
-        <div style="height: 110px;">
+        <div style="background-color: black; color: white; padding-top: 4%; padding-bottom: 1%;">
             <div class="container">
-                <div class="next-industry-block" style="height: 400px;">
-                    <div class="row next-industry-image">
-                        <h4 style="color: white; display: block; top: 0%; position: relative; left: 15px;right:200px;">Managed Cloud Services</h4>
-                        <br>
-                        <div><br>
-                            <h4>Managed Cloud Services</h4>
-                            <p>Experience the best of the cloud with our managed cloud services</p><br><br>
-                            <a href="/Indeft_site/templates/Services/migration.html">Read More...</a>
+                <div class="row">
+                    <div class="text" style="color: white; display:flex;">
+                        <div class="col-lg-6">
+                            <h3>1. Research</h3>
+                            <p>Before we commence the process of designing and development, we research all qualitative and quantitative aspects of it, compare it with competition, assess all your business needs and then create a blueprint accordingly.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>2. Wireframe</h3>
+                            <p>The next step is developing a sustainable wireframe that includes all the core functionalities and navigation flow to decipher the final app model. It saves most of the design time and follows a solid design-based approach.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text" style="color: white; display:flex;">
+                        <div class="col-lg-6">
+                            <h3>3. Design & Development</h3>
+                            <p>Using all the design tools and technologies, we start by designing layouts with content, features, and functionalities. Our goal is to create unique graphics that fulfill business objectives and ensure scalability and agility.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>4. Usability Testing</h3>
+                            <p>All testing procedures ensure the design and content drive engagement. This reengineered model ensures ergonomic system interfaces taking into consideration a client’s feedback as and when it comes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text" style="color: white; display:flex;">
+                        <div class="col-lg-6">
+                            <h3>5. Maintenance & Support</h3>
+                            <p>Once developed, we now focus on maintaining and supporting it to ensure optimal performances, especially during peak traffic times, easy navigation, and keeping pace with the changing market trends and customer expectations.</p>
                         </div>
                     </div>
                 </div>
@@ -375,104 +557,207 @@
         </div>
 
 
-        <div class="next-industry"style = "color: #00FF00">
+
+
+        <br>
+        <h1 style="color:blue;">
+            <center>Our competitive cloud partnerships</center>
+        </h1> <br>
+        <h4>
+            <center>As a leading Cloud migration partner, we support your cloud journey with these industry-leading tools, technologies, and platforms</center>
+        </h4>
+        <!-- new div-->
+
+
+        <style>
+            .image-container {
+                background-color: white;
+                padding: 20px;
+                border-radius: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            .image-container img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        </style>
+
+        <div style="background-color: #D3D3D3; padding-top: 4%; padding-bottom: 1%;">
             <div class="container">
-                <div class="row" >
-                    <div class="col-lg-7">
-                        <h2>Know about Other Services</h2><br>
-                        <p>Cloud has eliminated business risk and helps in releasing new application by taking away traditional server costs that were incurred in the past. Host everything from dynamic app/web apps to software products on secure, scalable, and reliable cloud. From Salesforce to AWS, Google Cloud, VMware and Microsoft Azure, our cloud tech stack promises business success..</p>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="image-container" style="height: 80%">
+                            <img src="/Indeft_site/Images/cc1.svg" alt="Kubernetes">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container" style="height: 80%">
+                            <img src="/Indeft_site/Images/aws.png" alt="AWS">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container" style="height: 80%">
+                            <img src="/Indeft_site/Images/cc2.png" alt="Docker">
+                        </div>
+                    </div>
+                </div>
+
+                <!--2nd row-->
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="image-container" style="height: 80%">
+                            <img src="/Indeft_site/Images/cc3.png" alt="Jenkins">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container" style="height: 80%">
+                            <img src="/Indeft_site/Images/cc4.png" alt="Jira">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image-container" style="height: 80%">
+                            <img src="/Indeft_site/Images/cc5.svg" alt="Git">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <!-- main containt starts -->
+
+
+        <!-- next-service-link -->
+        <div class="next-industry-main">
+            <div style="height: 110px;">
+                <div class="container">
+                    <div class="next-industry-block" style="height: 370px;">
+                        <div class="row next-industry-image">
+                            <p class="col-sm-5" style="color: white; display: block; top: 65%; position: relative; left: 15px;right:200px; ">Managed Cloud Services</p>
+                            <div class="col-sm-7" style="left:0px">
+                                <img src="/Indeft_site/Images/devops-header.png" class="img-fluid" alt="Medical Banner">
+                            </div>
+                            <br>
+                            <div><br>
+                                <h4>Managed Cloud Services</h4>
+                                <p>Experience the best of the cloud with our managed cloud services</p>
+                                <a href="/Indeft_site/templates/Services/migration.html">Read More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="next-industry" style="color: #00FF00">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h2>Know about Other Services</h2><br>
+                            <p>Cloud has eliminated business risk and helps in releasing new application by taking away traditional server costs that were incurred in the past. Host everything from dynamic app/web apps to software products on secure, scalable,
+                                and reliable cloud. From Salesforce to AWS, Google Cloud, VMware and Microsoft Azure, our cloud tech stack promises business success..</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
-        <h2>Need a hand for migrating to the Cloud? <span style="color:blue;">DevOps Solutions?</span></h2>
-        <h5> Our experts can help you strategize the entire migration process for you. Contact Today</h5>
-        <div class="button-container mt-auto" style="padding-top: 2%;">
-            <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+        <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
+            <h2>Need a hand for migrating to the Cloud? <span style="color:blue;">DevOps Solutions?</span></h2>
+            <h5> Our experts can help you strategize the entire migration process for you. Contact Today</h5>
+            <div class="button-container mt-auto" style="padding-top: 2%;">
+                <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
                 Contact Today  <span class="btn-arrow-icon">&#10148;</span>
             </button>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="sub-footer py-3 bg-dark ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-3 ">
-                    <img src="/Indeft_site/Images/indeft_logo.png"><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced resources
-                    we have become a trusted name and a global IT Solution and Services Partner for our clients.
-                </div>
-                <div class="col-md-3 ">
-                    <h5>About</h5><br>
-                    <ul class="list-unstyled ">
-                        <li><a href="# ">About Us</a></li>
-                        <li><a href="# ">Leadership Team</a></li>
-                        <li><a href="# ">Our Development Process</a></li>
-                        <li><a href="# ">Careers</a></li>
-                        <li><a href="# ">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 ">
-                    <h5>Services</h5><br>
-                    <ul class="list-unstyled ">
-                        <li><a href="# ">Android App Development</a></li>
-                        <li><a href="# ">iOS App Development</a></li>
-                        <li><a href="# ">Hybrid App Development</a></li>
-                        <li><a href="# ">Web Development</a></li>
-                        <li><a href="# ">Trending JS Framework</a></li>
-                        <li><a href="# ">ECommerce & CMS</a></li>
-                        <li><a href="# ">Analytics</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 ">
-                    <h5>Get in Touch</h5><br>
-                    <div class="address ">
-                        <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
-                        <p class="address-line ">Office No. 302 4th Floor,</p>
-                        <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
-                        <p class="address-line ">Sus Road Pune – 411021</p>
-                    </div>
-                    <div class="address ">
-                        <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
-                        <p class="address-line ">Registered Office D-001,</p>
-                        <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
-                        <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="horizontal-line "></div>
-
-        <div class="container text-left ">
-            <div class="d-flex justify-content-between align-items-center ">
-                <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
-                <div>
-                    <i class="bi bi-linkedin fs-3 mx-2 "></i>
-                    <i class="bi bi-facebook fs-3 mx-2 "></i>
-                    <i class="bi bi-instagram fs-3 mx-2 "></i>
-                    <i class="bi bi-youtube fs-3 mx-2 "></i>
-                </div>
             </div>
         </div>
 
-    </footer>
+        <!-- Footer -->
+        <footer class="sub-footer py-3 bg-dark ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-3 ">
+                        <img src="/Indeft_site/Images/indeft_logo.png"><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced
+                        resources we have become a trusted name and a global IT Solution and Services Partner for our clients.
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5>About</h5><br>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">About Us</a></li>
+                            <li><a href="# ">Leadership Team</a></li>
+                            <li><a href="# ">Our Development Process</a></li>
+                            <li><a href="# ">Careers</a></li>
+                            <li><a href="# ">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5>Services</h5><br>
+                        <ul class="list-unstyled ">
+                            <li><a href="# ">Android App Development</a></li>
+                            <li><a href="# ">iOS App Development</a></li>
+                            <li><a href="# ">Hybrid App Development</a></li>
+                            <li><a href="# ">Web Development</a></li>
+                            <li><a href="# ">Trending JS Framework</a></li>
+                            <li><a href="# ">ECommerce & CMS</a></li>
+                            <li><a href="# ">Analytics</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5>Get in Touch</h5><br>
+                        <div class="address ">
+                            <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
+                            <p class="address-line ">Office No. 302 4th Floor,</p>
+                            <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
+                            <p class="address-line ">Sus Road Pune – 411021</p>
+                        </div>
+                        <div class="address ">
+                            <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
+                            <p class="address-line ">Registered Office D-001,</p>
+                            <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
+                            <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="horizontal-line "></div>
+
+            <div class="container text-left ">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
+                    <div>
+                        <i class="bi bi-linkedin fs-3 mx-2 "></i>
+                        <i class="bi bi-facebook fs-3 mx-2 "></i>
+                        <i class="bi bi-instagram fs-3 mx-2 "></i>
+                        <i class="bi bi-youtube fs-3 mx-2 "></i>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
 
 
-    <!-- Bootstrap JS (optional, for toggling functionality) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+        <!-- Bootstrap JS (optional, for toggling functionality) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 
-    <script>
-        document.getElementById("contactBtn").addEventListener("click", function() {
-            // Navigate to the contact.html page
-            window.location.href = "/templates/contact_us.html";
-        });
-    </script>
+        <script>
+            document.getElementById("contactBtn").addEventListener("click", function() {
+                // Navigate to the contact.html page
+                window.location.href = "/templates/contact_us.html";
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js "></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+        <script src="/Indeft_site/templates/script.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
 
 </body>
 
