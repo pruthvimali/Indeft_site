@@ -11,6 +11,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/Indeft_site/styles/styles.css">
+    <link rel="stylesheet" href="/Indeft_site/styles/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Indeft_site/styles/style2.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         .main-image {
             background: linear-gradient(to bottom, rgb(6, 6, 133), rgb(6, 6, 133));
@@ -21,7 +31,7 @@
         
         .vertical-line {
             border-left: 1px solid #e0dfdf;
-            height: 100x;
+            height: 170px;
         }
         
         .info-block {
@@ -35,64 +45,319 @@
 
     <div class="main-image">
         <!-- navbar starts-------------- -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
-            <a class="navbar-brand" href="/Indeft_site/templates/Home.html">
-                <img src="/Indeft_site/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="/Indeft_site/images/logo.png" alt="..." style="width: 70px; height: 70px; border-radius: 50%;" />
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item  dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                      </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">SOFTWARE DEVELOPMENT</a>
-                            <a class="dropdown-item" href="#">MANAGED HOSTING SERVICES</a>
-                            <a class="dropdown-item" href="#">IT SECURITY SERVICES</a>
-                            <a class="dropdown-item" href="#">MANAGED SERVICES (REMOTE + ONSITE)</a>
-                            <a class="dropdown-item" href="#">PARTNER BASED SERVICES</a>
-                            <a class="dropdown-item" href="#">PROJECT SERVICES</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Industries
-                    </a>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="overflow: hidden;">
 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/Healthcare.html">Healthcare</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/Logistics.html">Logistics</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/eCommerse.html">e-Commerce</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/FMCG.html">FMCG</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/Food.html">Food & Restaurant</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/Education.html">Education/ e-Learning</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/travel.html">Travel & Hospitality</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
-                            <a class="dropdown-item" href="/Indeft_site/templates/Industries/Entertainment.html">Entertainment</a>
-                        </div>
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="border:red;">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item d-flex mt-10">
+                                <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" style="">Industries</a>
+                                <!-- Mega menu -->
+                                <div class="mega-menu">
+                                    <div class="container" style="">
+                                        <div class="row" style="">
+                                            <div class="industries_megamenu col-md-8" style="">
 
 
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
-                    </li>
-                    <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
-                </ul>
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Oil and Gas (CGD/utility)</p>
+                                                        <a href="/Indeft_site/templates/Industries/oilAndGas.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Healthcare</p>
+                                                        <a href="/Indeft_site/templates/Industries/Healthcare.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Logistics</p>
+                                                        <a href="/Indeft_site/templates/Industries/Logistics.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- Your content for the 8-column section -->
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">e-Commerce</p>
+                                                        <a href="/Indeft_site/templates/Industries/eCommerse.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">FMCG</p>
+                                                        <a href="/Indeft_site/templates/Industries/FMCG.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Food & Restaurant</p>
+                                                        <a href="/Indeft_site/templates/Industries/Food.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Education/ e-Learning</p>
+                                                        <a href="/Indeft_site/templates/Industries/Education.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Travel & Hospitality</p>
+                                                        <a href="/Indeft_site/templates/Industries/travel.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Parking, Permit & Traffic Industry</p>
+                                                        <a href="/Indeft_site/templates/Industries/Parking.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Entertainment</p>
+                                                        <a href="/Indeft_site/templates/Industries/Entertainment.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <div style="border-left: solid rgb(0, 255, 183) 10px; background-color: rgb(203, 247, 255); ">
+                                                    <p> </p>
+                                                    <p style="color: black; margin-left: 10px;">Our first-hand experience in partnering with industries across the globe has diversified our rich expertise in delivering innovative IT solutions to clients, from startups to giants. </p>
+                                                </div>
+                                            </div>
+                                            <div class="industries_megamenu col-md-4" style="">
+                                                <!-- Your content for the 8-column section -->
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="object-fit: cover;width: 100%; height: 100%;" id="">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <!-- Services -->
+                            <li>
+                                <a href="#" class="dropdown-toggle" style="">Services</a>
+                                <!-- Mega menu -->
+                                <div class="mega-menu">
+                                    <div class="container" style="">
+                                        <div class="row" style="">
+                                            <!-- colmns-4 -->
+                                            <div class="industries_megamenu col-md-4" style="border-right: solid 10px rgba(47, 0, 255, 0.199); position: relative;">
+                                                <div class="card-body" style="width: 100%; position: relative; gap: 5px; align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <hr>
+                                                    <img src="/Indeft_site/images/digital_transformation_icon-removebg-preview.png" alt="" style="width: 10%;">
+
+                                                    <a class="nav-link active" href="#" style="color: black; font-size: 17px;" id="dt">Digital Transformation</a>
+                                                </div>
+
+
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <img src="/Indeft_site/images/end-end-product-eng-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="end">End to End Product Engineering</a>
+                                                </div>
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <img src="/Indeft_site/images/business_trans_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="bt">Business Transformation</a>
+                                                </div>
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent;">
+                                                    <img src="/Indeft_site/images/cloud_service_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="cs">Cloud Service</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- colmns-8 -->
+
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock1">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/webapp.html" style="color: black;">Web Application Development</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/mobdev.html" style="color: black;">Mobile Application Development</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/devops.html" style="color: black;">DevSecOps</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/LegacyMigration.html" style="color: black;">Legacy App Migration</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End-end -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock2">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/SoftwareTechnologyConsulting.html" style="color: black;">Software Technology consulting</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="#" style="color: black;">UI/UX</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/supportAndMaintenance.html" style="color: black;">Support and Maintance</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="#" style="color: black;">Hire dedicated Resources</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/AgileProductDev.html" style="color: black;">Agile Product Development</a>
+                                                    </div>
+                                                </div>
+                                                <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                    <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                    <a href="#" style="color: black;">Blockchain App Development</a>
+                                                </div>
+                                                <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                    <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                    <a href="#" style="color: black;">Offshore Development Services</a>
+                                                </div>
+                                            </div>
+                                            <!-- business Trans -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock3">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/rpa.html" style="color: black;">Robotic Process Automation</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/BiReporting.html" style="color: black;">BI & Reporting Services</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="#" style="color: black;">Mobile App & Web Analytics</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="#" style="color: black;">SAP Implementation & Support</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Cloud Service -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock4">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/CloudDevMigration.html" style="color: black;">Cloud Development & Migration </a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/CloudManService.html" style="color: black;">Cloud Managed Services</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- col-4 -->
+
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock">
+                                                <div class="servicesblockimg" style="display: flex;">
+                                                    <img src="/Indeft_site/images/carosel_img2.jpg" alt="" width="100%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- navbar ends-------------- -->
 
 
-        <div class="container" style="padding-top: 1%;">
+        <div class="container" style="padding-top: 5%;">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="text" style="color: white;"><br><br><br>
@@ -114,14 +379,14 @@
                 <div class="content col-lg-9" style=" position: relative; top:50px;">
                     <p>At Indeft, we know the challenges clouding the online education realm, which is why our software development competence can help you take the lead in the very opportunistic e-learning market.</p>
                 </div>
-                <div class="vertical-line "></div>
+                <div class="vertical-line col-lg-1"></div>
                 <div class="col-lg-2">
-                    <div class="image-container" style="padding-left: 5%; padding-top: 12%;">
+                    <div class="image-container" style="padding-left: 0%; padding-top: 0%;position: relative; left:-50px;">
                         <img src="/Indeft_site/Images/headfone.png" alt="Your Image">
                     </div>
                     <div class="button-container mt-auto">
-                        <a href="/Indeft_site/templates/contact_us.html" class="btn btn-primary btn-arrow" style="width: 200px;">
-                            Talk to our Experts <span class="btn-arrow-icon">&#10148;</span>
+                        <a href="/Indeft_site/templates/contact_us.html" class="btn btn-primary btn-arrow" style="width: 200px;position: relative; left:-50px;">
+                            Talk to our Experts <span class="btn-arrow-icon ">&#10148;</span>
                         </a>
                     </div>
                 </div>
@@ -323,8 +588,8 @@
             <div class="container">
                 <div class="next-industry-block hide-on-mobile">
                     <div class="row next-industry-image">
-                        <p style="color: white; display: block; top: 70%; position: relative; left: 15px;">Healthcare IT solutions</p>
-                        <div class="col-sm-6" style="left:60px">
+                        <p class="col-sm-6" style="color: white; display: block; top: 70%; position: relative; left: 15px;">Healthcare IT solutions</p>
+                        <div class="col-sm-6" style="left:0px">
                             <img src="/Indeft_site/Images/medical-banner2.png" class="img-fluid" alt="Medical Banner">
                         </div>
                         <div>
@@ -440,6 +705,12 @@
             window.location.href = "/Indeft_site/templates/contact_us.html";
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <script src="/Indeft_site/templates/script.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
 
 </body>
 
