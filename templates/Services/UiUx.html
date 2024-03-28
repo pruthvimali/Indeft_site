@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Footer</title>
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this line to include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/Indeft_site/styles/styles.css">
+	
+    <style>
+        .main-image {
+            background: linear-gradient(to bottom, #503c4c, #a590a1);
+            background-size: 220vh 65vh;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        
+        .vertical-line {
+            border-left: 1px solid #e0dfdf;
+            height: 100x;
+        }
+        
+        .info-block {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-image">
+        <!-- navbar starts-------------- -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="full-navbar">
+            <a class="navbar-brand" href="/templates/Home.html">
+                <img src="/Indeft_site/Images/indeft_logo.png" width="150" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">SOFTWARE DEVELOPMENT</a>
+                            <a class="dropdown-item" href="#">MANAGED HOSTING SERVICES</a>
+                            <a class="dropdown-item" href="#">IT SECURITY SERVICES</a>
+                            <a class="dropdown-item" href="#">MANAGED SERVICES (REMOTE + ONSITE)</a>
+                            <a class="dropdown-item" href="#">PARTNER BASED SERVICES</a>
+                            <a class="dropdown-item" href="#">PROJECT SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Industries
+                    </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/templates/Industries/oilAndGas.html">Oil and Gas (CGD/utility)</a>
+                            <a class="dropdown-item" href="/templates/Industries/Healthcare.html">Healthcare</a>
+                            <a class="dropdown-item" href="/templates/Industries/Logistics.html">Logistics</a>
+                            <a class="dropdown-item" href="/templates/Industries/eCommerse.html">e-Commerce</a>
+                            <a class="dropdown-item" href="/templates/Industries/FMCG.html">FMCG</a>
+                            <a class="dropdown-item" href="/templates/Industries/Food.html">Food & Restaurant</a>
+                            <a class="dropdown-item" href="/templates/Industries/Education.html">Education/ e-Learning</a>
+                            <a class="dropdown-item" href="/templates/Industries/travel.html">Travel & Hospitality</a>
+                            <a class="dropdown-item" href="/templates/Industries/Parking.html">Parking, Permit & Traffic Industry</a>
+                            <a class="dropdown-item" href="/templates/Industries/Entertainment.html">Entertainment</a>
+                        </div>
+
+
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends ----------------- -->
+
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="text" style="color: white;"><br><br><br>
+                        <h2>Achieving complete digital transformation with reliable cloud migration</h2><br>
+                        <h5>Marrying your product/service USPs with impeccable and user-centric designs
+						</h5>
+						</div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="image-container">
+                        <img src="/Indeft_site/Images/u1.png" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- headphoneeeeeee-->
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row square-block info-block" style="background-color: white; position: relative;">
+                <div class="content col-lg-9" style="position: relative; z-index: 1;">
+                    <p>A CMMI Level 3 one of the top UI/UX companies in India that drive organizational growth with their intuitive design and experience with effortless and seamless navigation. Triazine’s custom UI/UX design experts perfect your omnichannel experiences across desktop, mobile and web applications while meeting your business’ specific requirements and industry standards.
+                    </p>
+					
+					<p>
+						The modern enterprise ecosystem demands you to move over your legacy systems, reduce operational costs, and breakdown data silos. As more and more organizations realize the potential of a cloud management they’re moving towards its end-to-end network.
+					</p>
+						
+					
+                </div>
+                <div class="col-lg-2" style="position: absolute; top: 50%; transform: translateY(-50%); right: 5%;">
+                    <div class="image-container">
+                        <img src="/Indeft_site/Images/headfone.png" alt="Your Image">
+                    </div>
+                    <div class="button-container mt-auto">
+                        <button type="button" class="btn btn-primary btn-arrow" style="width: 200px;">
+                            Talk to our Experts  <span class="btn-arrow-icon">&#10148;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+            </div>
+        </div>
+        
+
+
+        <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+            <div class="row">
+                
+                    <p> 
+
+						As<span style="color: green;"> one of the best UI/UX companies in India</b></span>we’ve assisted several leading brands design and develop innovative digital user experiences that not only solve complex business problems but fulfil customer requirements and pain points.
+					</p>
+                
+            </div>
+			<center>
+			<h1>Reinvent your business experiences with one of the  <span style="color: blue;">best UI/UX agencies in India</span>
+			</h1>
+		</center>
+		<p>At Triazine, we combine the innovative power of technology, creativity, and personalization to design and develop captivating user experiences that boost customer satisfaction rates, brand values, and conversions. Our knack about UI/UX designs and our experience in this domain help us leverage the best tools, futuristic technologies, and innovative solutions to drive significant business success.
+		</p>
+		<p>We ideate, strategize and develop digital designs for the ever-increasing number of channels and devices. As one amongst the top UI/UX companies in India, our strong market experience, unique blend of technologies, competitive functionalities will help you forge meaningful connections with the most important asset of your business- your customers.
+		</p>
+		<center><h1> Our UI/UX design and development services</h1>
+		<p>As one of the leading top UI/UX companies in India, we understand that the key to developing a successful mobile and web application is via implementing functionalities demanded by the target audience and designing eye-catching browsing experiences that agree with business goals and set industry benchmarks. Our experts help you with just that prospect.</p>
+		</center>
+			
+		<br> <br> 
+
+		<div style="padding-top: 4%; padding-bottom: 1%;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="white-block" style="text-align: center; height: 80%;">
+							<img src="/Indeft_site/Images/cc11.svg" style="height: 50px; width: auto;">
+							<hr>
+							<h4><strong style="color: #0096FF">Cloud App Development</strong></h4>
+							<p>Proficient developers for developing and deploying cloud apps that can perform a variety of operations </p>
+						</div>
+					</div>
+		
+					<div class="col-lg-4">
+						<div class="white-block" style="text-align: center; height: 80%;">
+							<img src="/Indeft_site/Images/cc12.svg" style="height: 50px; width: auto;">
+							<hr>
+							<h4><strong style="color: #0096FF;">Cloud Configuration </strong></h4>
+							<p>We treat Security as an integral part of the IoT application development process
+							</p>
+						</div>
+					</div>
+		
+					<div class="col-lg-4">
+						<div class="white-block" style="text-align: center; height: 80%;">
+							<img src="/Indeft_site/Images/cc13.svg" style="height: 50px; width: auto;">
+							<hr>
+							<h4><strong style="color: #0096FF">Migration to Cloud</strong></h4>
+							<p>Our cloud migration and implementation services include creating private clouds, migration to public clouds
+							</p>
+						</div>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="white-block" style="text-align: center; height: 80%;">
+							<img src="/Indeft_site/Images/cc14.svg" style="height: 50px; width: auto;">
+							<hr>
+							<h4><strong style="color: #0096FF;">Integration services</strong></h4>
+							<p>We have expertise in integrating applications for scenarios like on-premise to cloud, cloud to on-premise, and cloud to cloud
+							</p>
+						</div>
+					</div>
+		
+					<div class="col-lg-4">
+						<div class="white-block" style="text-align: center; height: 80%;">
+							<img src="/Indeft_site/Images/cc15.svg" style="height: 50px; width: auto;">
+							<hr>
+							<h4><strong style="color: #0096FF;">SAAS</strong></h4>
+							<p>Eradicate the need of a vast infrastructure and allow the user to access application software and databases at scale. </p>
+						</div>
+					</div>
+		
+					<div class="col-lg-4">
+						<div class="white-block" style="text-align: center; height: 80%;">
+							<img src="/Indeft_site/Images/cc15.svg" style="height: 50px; width: auto;">
+							<hr>
+							<h4><strong style="color: #0096FF;">PAAS</strong></h4>
+							<p>Generating new opportunities for software development, we deliver multi-tenant applications independent of any specific platform
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- new div-->
+	
+	<div style="background-color: black; color: white; text-align: center; padding: 20px;">
+		<h2>Our UX/UI development lifecycle</h2>
+		<hr style="width: 50%; margin: auto; border-color: white;">
+		<h5> Our unique expertise in user experience designing has helped us become one of the top UI/UX companies in India while assisting ambitious brands to tap into the UI/UX potential. Our skilled experts possess a comprehensive understanding of the process and ensure nothing short of optimum results. The process includes:</h5>
+
+	</div>
+	<!--temp-->
+
+	<div style="background-color: black; color: white; padding-top: 4%; padding-bottom: 1%;">
+		<div class="container">
+			<div class="row">
+				<div class="text" style="color: white; display:flex;">
+					<div class="col-lg-6">
+						<h3>1. Research</h3>
+						<p>Before we commence the process of designing and development, we research all qualitative and quantitative aspects of it, compare it with competition, assess all your business needs and then create a blueprint accordingly.</p>
+					</div>
+					<div class="col-lg-6">
+						<h3>2. Wireframe</h3>
+						<p>The next step is developing a sustainable wireframe that includes all the core functionalities and navigation flow to decipher the final app model. It saves most of the design time and follows a solid design-based approach.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="text" style="color: white; display:flex;">
+					<div class="col-lg-6">
+						<h3>3. Design & Development</h3>
+						<p>Using all the design tools and technologies, we start by designing layouts with content, features, and functionalities. Our goal is to create unique graphics that fulfill business objectives and ensure scalability and agility.</p>
+					</div>
+					<div class="col-lg-6">
+						<h3>4. Usability Testing</h3>
+						<p>All testing procedures ensure the design and content drive engagement. This reengineered model ensures ergonomic system interfaces taking into consideration a client’s feedback as and when it comes.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="text" style="color: white; display:flex;">
+					<div class="col-lg-6">
+						<h3>5. Maintenance & Support</h3>
+						<p>Once developed, we now focus on maintaining and supporting it to ensure optimal performances, especially during peak traffic times, easy navigation, and keeping pace with the changing market trends and customer expectations.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+    <br>
+    <h1 style="color:blue;"><center>Our competitive cloud partnerships</center></h1> <br>
+<h4>
+    <center>As a leading Cloud migration partner, we support your cloud journey with these industry-leading tools, technologies, and platforms</center></h4>
+<!-- new div-->
+
+
+<style>
+    .image-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+
+<div style="background-color: #D3D3D3; padding-top: 4%; padding-bottom: 1%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="image-container">
+                    <img src="/Indeft_site/Images/cc1.svg" alt="Kubernetes">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-container">
+                    <img src="/Indeft_site/Images/aws.png" alt="AWS">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-container">
+                    <img src="/Indeft_site/Images/cc2.png" alt="Docker">
+                </div>
+            </div>
+        </div>
+
+        <!--2nd row-->
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="image-container">
+                    <img src="/Indeft_site/Images/cc3.png" alt="Jenkins">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-container">
+                    <img src="/Indeft_site/Images/cc4.png" alt="Jira">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-container">
+                    <img src="/Indeft_site/Images/cc5.svg" alt="Git">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+    <!-- main containt starts -->
+    
+
+    <!-- next-service-link -->
+    <div class="next-industry-main">
+        <div style="height: 110px;">
+            <div class="container">
+                <div class="next-industry-block" style="height: 400px;">
+                    <div class="row next-industry-image">
+                        <h4 style="color: white; display: block; top: 0%; position: relative; left: 15px;right:200px;">Managed Cloud Services</h4>
+                        <br>
+                        <div><br>
+                            <h4>Managed Cloud Services</h4>
+                            <p>Experience the best of the cloud with our managed cloud services</p><br><br>
+                            <a href="/Indeft_site/templates/Services/migration.html">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="next-industry"style = "color: #00FF00">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-lg-7">
+                        <h2>Know about Other Services</h2><br>
+                        <p>Cloud has eliminated business risk and helps in releasing new application by taking away traditional server costs that were incurred in the past. Host everything from dynamic app/web apps to software products on secure, scalable, and reliable cloud. From Salesforce to AWS, Google Cloud, VMware and Microsoft Azure, our cloud tech stack promises business success..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
+        <h2>Need a hand for migrating to the Cloud? <span style="color:blue;">DevOps Solutions?</span></h2>
+        <h5> Our experts can help you strategize the entire migration process for you. Contact Today</h5>
+        <div class="button-container mt-auto" style="padding-top: 2%;">
+            <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                Contact Today  <span class="btn-arrow-icon">&#10148;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sub-footer py-3 bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="/Indeft_site/Images/indeft_logo.png"><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced resources
+                    we have become a trusted name and a global IT Solution and Services Partner for our clients.
+                </div>
+                <div class="col-md-3 ">
+                    <h5>About</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">Leadership Team</a></li>
+                        <li><a href="# ">Our Development Process</a></li>
+                        <li><a href="# ">Careers</a></li>
+                        <li><a href="# ">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Services</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">Android App Development</a></li>
+                        <li><a href="# ">iOS App Development</a></li>
+                        <li><a href="# ">Hybrid App Development</a></li>
+                        <li><a href="# ">Web Development</a></li>
+                        <li><a href="# ">Trending JS Framework</a></li>
+                        <li><a href="# ">ECommerce & CMS</a></li>
+                        <li><a href="# ">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Get in Touch</h5><br>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
+                        <p class="address-line ">Office No. 302 4th Floor,</p>
+                        <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
+                        <p class="address-line ">Sus Road Pune – 411021</p>
+                    </div>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
+                        <p class="address-line ">Registered Office D-001,</p>
+                        <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
+                        <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="horizontal-line "></div>
+
+        <div class="container text-left ">
+            <div class="d-flex justify-content-between align-items-center ">
+                <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
+                <div>
+                    <i class="bi bi-linkedin fs-3 mx-2 "></i>
+                    <i class="bi bi-facebook fs-3 mx-2 "></i>
+                    <i class="bi bi-instagram fs-3 mx-2 "></i>
+                    <i class="bi bi-youtube fs-3 mx-2 "></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS (optional, for toggling functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <script>
+        document.getElementById("contactBtn").addEventListener("click", function() {
+            // Navigate to the contact.html page
+            window.location.href = "/templates/contact_us.html";
+        });
+    </script>
+
+</body>
+
+</html>
