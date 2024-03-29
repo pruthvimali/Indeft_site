@@ -4,7 +4,8 @@ body {
     position: relative;
 }
 
-#full-navbar {
+
+/* #full-navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: -webkit-sticky;
     position: sticky;
@@ -30,7 +31,7 @@ body {
 .navbar-nav .nav-link:hover {
     color: black !important;
     background-color: white!important;
-}
+} */
 
 .footer {
     position: absolute;
