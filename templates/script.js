@@ -33,43 +33,43 @@ $(document).ready(function() {
     });
 });
 
-var dt= document.getElementById('dt')
-var end= document.getElementById('end')
-var bt= document.getElementById('bt')
-var cs= document.getElementById('cs')
+var dt = document.getElementById('dt')
+var end = document.getElementById('end')
+var bt = document.getElementById('bt')
+var cs = document.getElementById('cs')
 
-var servicesblock1= document.getElementById('servicerightblock1')
-var servicesblock2= document.getElementById('servicerightblock2')
-var servicesblock3= document.getElementById('servicerightblock3')
-var servicesblock4= document.getElementById('servicerightblock4')
+var servicesblock1 = document.getElementById('servicerightblock1')
+var servicesblock2 = document.getElementById('servicerightblock2')
+var servicesblock3 = document.getElementById('servicerightblock3')
+var servicesblock4 = document.getElementById('servicerightblock4')
 
-end.addEventListener('click',()=>{
-    servicesblock2.style.display='block'
-    servicesblock1.style.display='none'
-    servicesblock3.style.display='none'
-    servicesblock4.style.display='none'
-    // servicesblock2.style.background='red'
+end.addEventListener('click', () => {
+    servicesblock2.style.display = 'block'
+    servicesblock1.style.display = 'none'
+    servicesblock3.style.display = 'none'
+    servicesblock4.style.display = 'none'
+        // servicesblock2.style.background='red'
 });
-dt.addEventListener('click',()=>{
-    servicesblock2.style.display='none'
-    servicesblock1.style.display='block'
-    servicesblock3.style.display='none'
-    servicesblock4.style.display='none'
-    // servicesblock2.style.background='red'
+dt.addEventListener('click', () => {
+    servicesblock2.style.display = 'none'
+    servicesblock1.style.display = 'block'
+    servicesblock3.style.display = 'none'
+    servicesblock4.style.display = 'none'
+        // servicesblock2.style.background='red'
 });
-bt.addEventListener('click',()=>{
-    servicesblock2.style.display='none'
-    servicesblock1.style.display='none'
-    servicesblock3.style.display='block'
-    servicesblock4.style.display='none'
-    // servicesblock2.style.background='red'
+bt.addEventListener('click', () => {
+    servicesblock2.style.display = 'none'
+    servicesblock1.style.display = 'none'
+    servicesblock3.style.display = 'block'
+    servicesblock4.style.display = 'none'
+        // servicesblock2.style.background='red'
 });
-cs.addEventListener('click',()=>{
-    servicesblock2.style.display='none'
-    servicesblock1.style.display='none'
-    servicesblock3.style.display='none'
-    servicesblock4.style.display='block'
-    // servicesblock2.style.background='red'
+cs.addEventListener('click', () => {
+    servicesblock2.style.display = 'none'
+    servicesblock1.style.display = 'none'
+    servicesblock3.style.display = 'none'
+    servicesblock4.style.display = 'block'
+        // servicesblock2.style.background='red'
 });
 
 

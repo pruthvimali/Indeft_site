@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Footer</title>
+    <!-- Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add this line to include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/Indeft_site/styles/styles.css">
+    <link rel="stylesheet" href="/Indeft_site/styles/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Indeft_site/styles/style2.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .main-image {
+            background: linear-gradient(to bottom, #503c4c, #a590a1);
+            background-size: 220vh 65vh;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        
+        .vertical-line {
+            border-left: 1px solid #e0dfdf;
+            height: 100x;
+        }
+        
+        .info-block {
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-image">
+        <!-- navbar starts-------------- -->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="/Indeft_site/images/logo.png" alt="..." style="width: 70px; height: 70px; border-radius: 50%;" />
+
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="overflow: hidden;">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" style="border:red;">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item d-flex mt-10">
+                                <a class="nav-link active" aria-current="page" href="/Indeft_site/templates/Home.html" id="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Indeft_site/templates/Blogs/Blogs.html">Blogs</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" style="">Industries</a>
+                                <!-- Mega menu -->
+                                <div class="mega-menu">
+                                    <div class="container" style="">
+                                        <div class="row" style="">
+                                            <div class="industries_megamenu col-md-8" style="">
+
+
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Oil and Gas (CGD/utility)</p>
+                                                        <a href="/Indeft_site/templates/Industries/oilAndGas.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Healthcare</p>
+                                                        <a href="/Indeft_site/templates/Industries/Healthcare.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Logistics</p>
+                                                        <a href="/Indeft_site/templates/Industries/Logistics.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- Your content for the 8-column section -->
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">e-Commerce</p>
+                                                        <a href="/Indeft_site/templates/Industries/eCommerse.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">FMCG</p>
+                                                        <a href="/Indeft_site/templates/Industries/FMCG.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Food & Restaurant</p>
+                                                        <a href="/Indeft_site/templates/Industries/Food.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Education/ e-Learning</p>
+                                                        <a href="/Indeft_site/templates/Industries/Education.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Travel & Hospitality</p>
+                                                        <a href="/Indeft_site/templates/Industries/travel.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Parking, Permit & Traffic Industry</p>
+                                                        <a href="/Indeft_site/templates/Industries/Parking.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="" id="megaimg">
+                                                    <div class="card-body" style="position: absolute;">
+                                                        <p class="card-text">Entertainment</p>
+                                                        <a href="/Indeft_site/templates/Industries/Entertainment.html" class="ricon"><span>&#8594;</span> </i>
+                                              </a>
+                                                    </div>
+                                                </div>
+                                                <div style="border-left: solid rgb(0, 255, 183) 10px; background-color: rgb(203, 247, 255); ">
+                                                    <p> </p>
+                                                    <p style="color: black; margin-left: 10px;">Our first-hand experience in partnering with industries across the globe has diversified our rich expertise in delivering innovative IT solutions to clients, from startups to giants. </p>
+                                                </div>
+                                            </div>
+                                            <div class="industries_megamenu col-md-4" style="">
+                                                <!-- Your content for the 8-column section -->
+                                                <!-- education -->
+                                                <div class="card" style="">
+
+                                                    <img src="/Indeft_site/images/carosel_img1.jpg" class="position-relative" alt="Placeholder Image" style="object-fit: cover;width: 100%; height: 100%;" id="">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <!-- Services -->
+                            <li>
+                                <a href="#" class="dropdown-toggle" style="">Services</a>
+                                <!-- Mega menu -->
+                                <div class="mega-menu">
+                                    <div class="container" style="">
+                                        <div class="row" style="">
+                                            <!-- colmns-4 -->
+                                            <div class="industries_megamenu col-md-4" style="border-right: solid 10px rgba(47, 0, 255, 0.199); position: relative;">
+                                                <div class="card-body" style="width: 100%; position: relative; gap: 5px; align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <hr>
+                                                    <img src="/Indeft_site/images/digital_transformation_icon-removebg-preview.png" alt="" style="width: 10%;">
+
+                                                    <a class="nav-link active" href="#" style="color: black; font-size: 17px;" id="dt">Digital Transformation</a>
+                                                </div>
+
+
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <img src="/Indeft_site/images/end-end-product-eng-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="end">End to End Product Engineering</a>
+                                                </div>
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent; border-bottom: 1px solid rgb(0, 0, 0);">
+                                                    <img src="/Indeft_site/images/business_trans_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="bt">Business Transformation</a>
+                                                </div>
+                                                <div class="card-body" style="background-color: transparent; width: 100%;position: relative; gap: 5px;align-items: center; text-align: start;justify-content: start; background-color: transparent;">
+                                                    <img src="/Indeft_site/images/cloud_service_icon-removebg-preview.png" alt="" style="width: 10%;">
+                                                    <hr>
+                                                    <a class="nav-link" href="#" style="color: black;font-size: 17px;" id="cs">Cloud Service</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- colmns-8 -->
+
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock1">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/webapp.html" style="color: black;">Web Application Development</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/mobdev.html" style="color: black;">Mobile Application Development</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/devops.html" style="color: black;">DevSecOps</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/LegacyMigration.html" style="color: black;">Legacy App Migration</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End-end -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock2">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/SoftwareTechnologyConsulting.html" style="color: black;">Software Technology consulting</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/UiUx.html" style="color: black;">UI/UX</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/supportAndMaintenance.html" style="color: black;">Support and Maintance</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/Hired.html" style="color: black;">Hire dedicated Resources</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/AgileProductDev.html" style="color: black;">Agile Product Development</a>
+                                                    </div>
+                                                </div>
+                                                <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                    <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                    <a href="/Indeft_site/templates/Services/Blockchain.html" style="color: black;">Blockchain App Development</a>
+                                                </div>
+                                                <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                    <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                    <a href="/Indeft_site/templates/Services/Offshore.html" style="color: black;">Offshore Development Services</a>
+                                                </div>
+                                            </div>
+                                            <!-- business Trans -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock3">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/rpa.html" style="color: black;">Robotic Process Automation</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/BiReporting.html" style="color: black;">BI & Reporting Services</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/deops-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/MobileApp.html" style="color: black;">Mobile App & Web Analytics</a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/lad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/Sap.html" style="color: black;">SAP Implementation & Support</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Cloud Service -->
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock4">
+                                                <div class="servicesblock" style="display: flex; flex-wrap: wrap;">
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);  justify-content: start; align-items: center; text-align: center;">
+                                                        <img src="/Indeft_site/images/wad_icon-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/CloudDevMigration.html" style="color: black;">Cloud Development & Migration </a>
+                                                    </div>
+                                                    <div class="wad" style="display: flex; background-color: rgb(255, 255, 255);justify-content: start; align-items: center; text-align: start;">
+                                                        <img src="/Indeft_site/images/mad-removebg-preview.png" alt="" style="width: 12%;">
+                                                        <a href="/Indeft_site/templates/Services/CloudManService.html" style="color: black;">Cloud Managed Services</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- col-4 -->
+
+                                            <div class="industries_megamenu col-md-4" style="" id="servicerightblock">
+                                                <div class="servicesblockimg" style="display: flex;">
+                                                    <img src="/Indeft_site/images/carosel_img2.jpg" alt="" width="100%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button type="button" class="btn btn-success" id="contactBtn">Contact Us</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends ----------------- -->
+
+
+        <div class="container" style="padding-top: 5%;">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="text" style="color: white;"><br><br><br>
+                        <h2>Achieving complete digital transformation with reliable cloud migration</h2><br>
+                        <h5>Derive more value from your enterprise systems and reduce operational costs
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="top: 30px;">
+                    <div class="image-container">
+                        <img src="/Indeft_site/Images/cm1.png" alt="Your Image" class="image img-fluid hover-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- headphoneeeeeee-->
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row square-block info-block" style="background-color: white; position: relative;">
+                <div class="content col-lg-9" style="position: relative; top: 50px;">
+                    <p>The modern enterprise ecosystem demands you to move over your legacy systems, reduce operational costs, and breakdown data silos. As more and more organizations realize the potential of a cloud management they’re moving towards its
+                        end-to-end network.
+                    </p>
+
+                    <p>
+                        The modern enterprise ecosystem demands you to move over your legacy systems, reduce operational costs, and breakdown data silos. As more and more organizations realize the potential of a cloud management they’re moving towards its end-to-end network.
+                    </p>
+
+
+                </div>
+                <div class="vertical-line col-lg-1"></div>
+                <div class="col-lg-2">
+                    <div class="image-container" style="padding-left: 0%; padding-top: 0%;position: relative; left:-50px;">
+                        <img src="/Indeft_site/Images/headfone.png" alt="Your Image">
+                    </div>
+                    <div class="button-container mt-auto">
+                        <a href="/Indeft_site/templates/contact_us.html" class="btn btn-primary btn-arrow" style="width: 200px;position: relative; left:-50px;">
+                            Talk to our Experts <span class="btn-arrow-icon ">&#10148;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+            <div class="row">
+
+                <p>
+
+                    <span style="color: green;">Our certified experts explore the best strategy to help you achieve a smooth transition to the cloud. </b></span>We help you navigate the complexities, determine the right strategy, operating model, roadmap,
+                    and ecosystem. Our deep industry insights and technical knowledge help you execute a seamless cloud migration and modernization process. Our tailored solutions ensure that your movement to the cloud is as secure, cost-effective, agile,
+                    and scalable as it can be.
+                </p>
+
+            </div>
+            <center>
+                <h1> Stay ahead of the competition with <span style="color: blue;">end-to-end cloud migration</span>
+                </h1>
+            </center>
+            <p>Triazine’s cloud migration services help you reduce dependence on on-premises system, expenditures, and boost productivity. Our proven methodologies and approaches assist you with a cloud transformation blueprint, customized to suit the needs
+                of your business. Our Center of Excellence (CoE) has assisted several industry leaders and startups to initiate cloud adoption and migration while reducing downtime and improving cloud economics at scale. We first analyze your requirements
+                to gain deep insights of your company’s objective and goals and then build an iterative roadmap to migrate your workloads, assets, and services.
+            </p>
+            <p>Whether your application runs on on-premises and cloud, you need to consistently solve bottlenecks, check for breaches and unauthorized access, and ensure that your workforce follows your cloud governance model. We are here to assist you throughout
+                your cloud journey. Our experienced cloud consultants will help you reduce operational costs, boost innovation, and help you achieve your strategic business goals.
+            </p>
+            <b> Our cloud migration strategy includes:</b> <br>
+            <i class="bi bi-check-lg" style="font-size: 2em;"></i><b> Assessing your workloads to explore the right cloud network</b>
+            <br> <br>
+
+            <i class="bi bi-check-lg" style="font-size: 2em;"></i><b>
+			Following the lift and shift approach to move your physical or virtual servers to the cloud without any major changes </b>
+            <br> <br>
+
+            <i class="bi bi-check-lg" style="font-size: 2em;"></i><b>Replatforming your applications to the cloud post optimization like changing the self-hosted infrastructure to managed services.</b>
+            <br> <br>
+
+            <i class="bi bi-check-lg" style="font-size: 2em;"></i><b>
+			Repurchasing to access the cloud network via an existing licensing model.</b>
+            <br> <br>
+
+            <i class="bi bi-check-lg" style="font-size: 2em;"></i><b>
+			Remodifying the applications as per the SaaS and PaaS based trends to reduce business costs.</b>
+            <br> <br>
+
+            <i class="bi bi-check-lg" style="font-size: 2em;"></i><b>
+			
+Retaining a few on-premises solutions to ensure cost-effective cloud migration.</b>
+            <br> <br>
+            <i class="bi bi-check-lg" style="font-size: 2em;"></i><b>
+			
+Removing unused workloads and applications to save cost expenditures.</b>
+            <br> <br>
+            <br>
+            <center>
+                <h1> Our Cloud Services</h1>
+            </center>
+            <p>
+
+                Triazine helps you navigate the cloud, selecting the architecture and ecosystem partners, and create strategies that meet your business needs. Our full suite of cloud solutions cover assessment, migration, replatforming, repurchasing, remodifying, retaining,
+                and optimization procedures. Along with our platform partnerships and deep expertise into the same, we can help you accelerate your cloud migration plan and boost business growth and transformation.
+            </p>
+
+
+
+            <br> <br> <br> <br>
+            <div class="container" style="padding-top: 0%; padding-bottom: -5%;">
+                <div class="row" style="margin-top: -2%">
+                    <div class="col-lg-4">
+
+                        <img src="/Indeft_site/Images/c1.png" style="height: 15%;"> <br><br>
+                        <h4 style=" color:blue;"><b> Cloud Consulting </b> </h4>
+                        <p style=" line-height: 1.8;">Our specialized consultants’ partner with your IT team to better understand your business goals, explore the right technical path for the same, and predict ROIs. Then, our cloud experts suggest the best cloud solution architecture
+                            and begin mapping the same. We also assist with phase migration to reduce risks and ensure a smooth transition.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-4">
+
+                        <img src="/Indeft_site/Images/c2.png" style="height: 15%;">
+                        <br><br>
+                        <h4 style=" color:blue;"><b> Containerization Consulting</b> </h4>
+                        <p style=" line-height: 1.8;">Leading-edge digital technologies like containerization allows you to easily migrate to the cloud and assists with microservices deployment. Such platforms like AWS and Azure ensures a successful transition to the cloud with agility,
+                            flexibility, and scalability. Our containerization consultants help you in decoupling monolithic workloads to microservices and then move them to the cloud in containerized form.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <img src="/Indeft_site/Images/c3.png" style="height: 15%;">
+                        <br><br>
+                        <h4 style=" color:blue;"><b> Cloud Engineering</b> </h4>
+                        <p style=" line-height: 1.8;">Our DevOps team built a CI/CD pipeline while adhering to speedy delivery cycles. We implement automated tools to iteratively test codes, accelerating the delivery of the software with new features and updates while saving time.
+                            The CI/CD process ensures the security and scalability of the software.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- next row-->
+            <div class="container" style="padding-top: -30%; padding-bottom: -20%">
+                <div class="row" style="margin-top: -30%;  padding-bottom: -30% ">
+                    <div class="col-lg-4">
+
+                        <img src="/Indeft_site/Images/c4.png" style="height: 15%;"> <br><br>
+                        <h4 style=" color:blue;"><b>Cloud Optimization</b> </h4>
+                        <p style=" line-height: 1.8;">With our immense expertise in AWS products, we can help you leverage its full potential to achieve business and IT objectives. From legacy modernization to developing enterprise and customer-centric cloud-native apps, we can help
+                            scale up your business through best cloud practices. Our full suite of AWS services include consulting, cloud migration , platform modernization, cloud automation , analytics, and cloud managed services.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-4">
+
+                        <img src="/Indeft_site/Images/c5.png" style="height: 15%;">
+                        <br><br>
+                        <h4 style=" color:blue;"><b>AWS Cloud Services</b> </h4>
+                        <p style=" line-height: 1.8;">With our immense expertise in AWS products, we can help you leverage its full potential to achieve business and IT objectives. From legacy modernization to developing enterprise and customer-centric cloud-native apps, we can help
+                            scale up your business through best cloud practices. Our full suite of AWS services include consulting, cloud migration , platform modernization, cloud automation , analytics, and cloud managed services.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <img src="/Indeft_site/Images/c6.png" style="height: 15%;">
+                        <br><br>
+                        <h4 style=" color:blue;"><b> Azure Migration Services</b> </h4>
+                        <p style=" line-height: 1.8;">Leverage the benefits of Microsoft Azure to build an agile, flexible, and scalable cloud infrastructure. Our partnership with Azure Cloud can help you strategize a cloud model around its impeccable benefits and assist with migration
+                            solutions as well. From application to database migration, we ensure that your cloud system is based on the best practices around serverless services, DevOps, and microservices.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- new div-->
+        <div style="background-color: black; padding-top: 4%; padding-bottom: 1%;">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="text" style="color: white;">
+                        <center>
+                            <h2> <b>Our 5-step process for cost-effective and smooth cloud migration </b></h2>
+                        </center> <br>
+                        <p>Our technical acumen and impeccable capabilities with cloud migration will help you move infrastructure, platform, database, application, and workloads. As a part of our cloud infrastructure migration model, we employ our deep
+                            expertise with leading cloud platforms like Microsoft Azure, AWS, GCP, VMWare, IBM, Azure, and SAP to provide you a seamless migration experience. Our 5-step migration plan includes:</p> <br><br>
+                    </div>
+
+
+                    <div class="text" style="color: white; display:flex;">
+
+                        <div class="col-lg-6">
+                            <h3> 1. Planned Strategy</h3>
+                            <p> <strong>We first identify the adaptability of your organization’s assets and workloads for the cloud and how well it can fit into it. We plan a strategy around cloud migration to fulfill your business objectives, ensure cost-effective movement, and prevent data loss or security breach.</strong></p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h3> 2. Infra Audit</h3>
+                            <p> <strong>Our team assesses the capabilities of your existing infrastructure to offer the best cloud migration practices in terms of competitive attributes like security, scalability, automation, recovering assets, removing assets to reduce operational costs, disaster recovery, and so on.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second row-->
+                <div class="row">
+                    <div class="text" style="color: white; display:flex;">
+
+                        <div class="col-lg-6">
+                            <h3> 3. Designing a cloud architecture</h3>
+                            <p> <strong>We gather our existing resources, structure a team as per your business requirements to create a cloud architecture that achieves your IT objectives.</strong></p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h3> 4. Automation</h3>
+                            <p> <strong>Our cloud experts develop a cloud model that helps you achieve the modern objectives of automation, DevOps, serverless setup, pay-as-you-go services, and all the other tech solutions.. </strong></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Third row-->
+
+                <div class="row">
+                    <div class="text" style="color: white; display:flex;">
+
+                        <div class="col-lg-6">
+                            <h3> 6. Deployment and testing </h3>
+                            <p> <strong>We follow an iterative approach while deploying your assets to the cloud. Then, our team of experts stage it and test it for its operational efficiency, scalability, and functionality. Moreover, we continuously run maintenance and support protocols to prevent data leaks, optimize usage, and ensure superior performance always.</strong></p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 style="color:blue;">
+        <center>Our competitive cloud partnerships</center>
+    </h1> <br>
+    <h4>
+        <center>As a leading Cloud migration partner, we support your cloud journey with these industry-leading tools, technologies, and platforms..</center>
+    </h4>
+    <!-- new div-->
+
+
+    <style>
+        .image-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+    <div style="background-color: #D3D3D3; padding-top: 4%; padding-bottom: 1%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="image-container" style="height: 80%;">
+                        <img src="/Indeft_site/Images/cc1.svg" alt="Kubernetes" style="position: relative; top: 10px;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-container" style="height: 80%;">
+                        <img src="/Indeft_site/Images/aws.png" alt="AWS">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-container" style="height: 80%;">
+                        <img src="/Indeft_site/Images/cc2.png" alt="Docker">
+                    </div>
+                </div>
+            </div>
+
+            <!--2nd row-->
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="image-container" style="height: 80%;">
+                        <img src="/Indeft_site/Images/cc3.png" alt="Jenkins">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-container" style="height: 80%;">
+                        <img src="/Indeft_site/Images/cc4.png" alt="Jira">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="image-container" style="height: 80%;">
+                        <img src="/Indeft_site/Images/cc5.svg" alt="Git">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <!-- main containt starts -->
+
+
+    <!-- next-service-link -->
+    <div class="next-industry-main">
+        <div style="height: 90px;">
+            <div class="container">
+                <div class="next-industry-block" style="height: 380px;">
+                    <div class="row next-industry-image">
+                        <p class="col-sm-5" style="color: white; display: block; top: 65%; position: relative; left: 15px;right:200px; ">Managed Cloud Services</p>
+                        <div class="col-sm-6" style="left:0px; top: 10px;">
+                            <img src="/Indeft_site/Images/it-software-maintanance-banner.png" class="img-fluid" alt="Medical Banner">
+                        </div>
+                        <div><br><br>
+                            <h4>Managed Cloud Services</h4><br>
+                            <p>Experience the best of the cloud with our managed cloud services</p>
+                            <a href="/Indeft_site/templates/Services/migration.html">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="next-industry" style="color: #00FF00">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2>Know about Other Services</h2><br>
+                        <p>Cloud has eliminated business risk and helps in releasing new application by taking away traditional server costs that were incurred in the past. Host everything from dynamic app/web apps to software products on secure, scalable,
+                            and reliable cloud. From Salesforce to AWS, Google Cloud, VMware and Microsoft Azure, our cloud tech stack promises business success..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="padding-bottom: 3%; padding-top: 3%;">
+        <h2>Need a hand for migrating to the Cloud? <span style="color:blue;">DevOps Solutions?</span></h2>
+        <h5> Our experts can help you strategize the entire migration process for you. Contact Today</h5>
+        <div class="button-container mt-auto" style="padding-top: 2%;">
+            <button type="button" class="btn btn-primary btn-arrow" style="width: 250px; padding: 10px 20px; font-size: 20px;">
+                Contact Today  <span class="btn-arrow-icon">&#10148;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sub-footer py-3 bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="/Indeft_site/Images/indeft_logo.png"><br><br> Right from its inception in 2016, InDeft Technology Solutions has been one of the leading IT solution provider in India and overseas. With our professional approach & experienced
+                    resources we have become a trusted name and a global IT Solution and Services Partner for our clients.
+                </div>
+                <div class="col-md-3 ">
+                    <h5>About</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">Leadership Team</a></li>
+                        <li><a href="# ">Our Development Process</a></li>
+                        <li><a href="# ">Careers</a></li>
+                        <li><a href="# ">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Services</h5><br>
+                    <ul class="list-unstyled ">
+                        <li><a href="# ">Android App Development</a></li>
+                        <li><a href="# ">iOS App Development</a></li>
+                        <li><a href="# ">Hybrid App Development</a></li>
+                        <li><a href="# ">Web Development</a></li>
+                        <li><a href="# ">Trending JS Framework</a></li>
+                        <li><a href="# ">ECommerce & CMS</a></li>
+                        <li><a href="# ">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ">
+                    <h5>Get in Touch</h5><br>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Branch Office</h6>
+                        <p class="address-line ">Office No. 302 4th Floor,</p>
+                        <p class="address-line ">M ARCH Center Beside Audi Showroom</p>
+                        <p class="address-line ">Sus Road Pune – 411021</p>
+                    </div>
+                    <div class="address ">
+                        <h6><i class="bi bi-geo-alt-fill "></i> Registered Office</h6>
+                        <p class="address-line ">Registered Office D-001,</p>
+                        <p class="address-line ">Dhruv Tara C.H.S Plot No 18,</p>
+                        <p class="address-line ">Sector 20 Airoli Navi Mumbai – 400708</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="horizontal-line "></div>
+
+        <div class="container text-left ">
+            <div class="d-flex justify-content-between align-items-center ">
+                <span class="text-light ">©2024 InDeft Technology Solutions Private Limited | All rights reserved</span>
+                <div>
+                    <i class="bi bi-linkedin fs-3 mx-2 "></i>
+                    <i class="bi bi-facebook fs-3 mx-2 "></i>
+                    <i class="bi bi-instagram fs-3 mx-2 "></i>
+                    <i class="bi bi-youtube fs-3 mx-2 "></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS (optional, for toggling functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <script>
+        document.getElementById("contactBtn").addEventListener("click", function() {
+            // Navigate to the contact.html page
+            window.location.href = "/Indeft_site/templates/contact_us.html";
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <script src="/Indeft_site/templates/script.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
