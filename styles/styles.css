@@ -256,10 +256,25 @@ body {
 
 .next-industry {
     background-color: #2d2db4;
-    background-size: 220vh 10vh;
+    background-size: 100% 100%;
     color: white;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.headfone-img {
+    padding-left: 0%;
+}
+
+@media (max-width: 768px) {
+    .next-industry {
+        background-size: cover;
+        padding-bottom: 15%;
+    }
+    .headfone-img {
+        top: 20px;
+        left: 40px;
+    }
 }
 
 .next-industry-image {
