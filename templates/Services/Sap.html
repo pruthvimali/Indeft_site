@@ -45,6 +45,16 @@
             padding-top: 5vh;
             padding-bottom: 5vh;
         }
+
+        @media (min-width:450px) and (max-width:750px) {
+            .main-image {
+                background: linear-gradient(to bottom, #503c4c, #a590a1);
+                background-size: 300vh 120vh;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+            
+        }
     </style>
 </head>
 
@@ -373,8 +383,8 @@
                         </h5>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="image-container">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="image-container img-fluid" >
                         <img src="/Indeft_site/Images/gr_sap.svg" alt="Your Image" class="image img-fluid hover-image">
                     </div>
                 </div>
@@ -384,26 +394,27 @@
 
         <!-- headphoneeeeeee-->
 
-        <div class="container" style="padding-top: 2%;">
-            <div class="row square-block info-block" style="background-color: white; position: relative;">
-                <div class="content col-lg-9" style="position: relative; top: 30px;">
+        <div class="container saphead" style="padding-top: 2%;">
+            <div class="row square-block info-block" style="background-color: white;">
+                <div class="col-lg-9 col-md-9 col-sm-12 content" style="padding-top: 30px;">
                     <p>Derive maximum value from your SAP implementation & support investments via our decade-long expertise in finance, supply chain management, CRM and supplier relationship management. SAP implementations do have a lot riding on them,
                         though. Mistakes are costly. A poor SAP implementation can result in brand damage, loss of revenue, negative customer experience, excessive IT and business operational expenses and frustrated employees.
                     </p>
                 </div>
-                <div class="vertical-line col-lg-1"></div>
-                <div class="col-lg-2">
-                    <div class="image-container" style="padding-left: 0%; padding-top: 0%;position: relative; left:-50px;">
-                        <img src="/Indeft_site/Images/headfone.png" alt="Your Image">
+                <div class="col-lg-1 col-md-1 col-sm-12 d-none d-md-block vertical-line"></div> <!-- Hide on small devices -->
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <div class="image-container">
+                        <img src="/Indeft_site/Images/headfone.png" alt="Your Image" class="img-fluid"> <!-- Responsive image -->
                     </div>
-                    <div class="button-container mt-auto">
-                        <a href="/Indeft_site/templates/contact_us.html" class="btn btn-primary btn-arrow" style="width: 200px;position: relative; left:-50px;">
+                    <div class="button-container mt-3"> <!-- Add margin top -->
+                        <a href="/Indeft_site/templates/contact_us.html" class="btn btn-primary btn-arrow" style="width: 100%;"> <!-- Adjust width -->
                             Talk to our Experts <span class="btn-arrow-icon ">&#10148;</span>
                         </a>
                     </div>
                 </div>
             </div>
-        </div><br>
+        </div>
+        <br>
         <center>
 
             <div class="container">
@@ -537,8 +548,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="/Indeft_site/Images/gr_eLearning (1).svg" alt="Image" style="max-width: 100%;">
+                        <img src="/Indeft_site/Images/gr_eLearning (1).svg" alt="Image" class="img-fluid">
                     </div>
+                    
                     <div class="col-lg-6">
                         <h2>Installation vs. Migration vs. Upgrades</h2>
                         <p>
@@ -566,10 +578,10 @@
 
 
         <!-- next-service-link -->
-        <div class="next-industry-main">
+        <div class="next-industry-main ">
             <div style="height: 130px;">
                 <div class="container">
-                    <div class="next-industry-block" style="height: 400px;">
+                    <div class="next-industry-block hide-on-mobile" style="height: 400px;">
                         <div class="row next-industry-image">
                             <p class="col-sm-5" style="color: white; display: block; top: 40%; position: relative; left: 15px;right:200px; ">Digital Transformation with Reliable Cloud Migration</p>
                             <div class="col-sm-7" style="left:40px; top: 40px;">
