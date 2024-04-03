@@ -107,7 +107,8 @@ body {
     /* border-radius: 10px; */
     text-align: left;
     margin-bottom: 20px;
-    height: 300px;
+    min-height: 300px;
+    max-height: 100%;
     width: 100%;
     border-radius: 4%;
     /* box-shadow: 8px 8px 8px 8px rgba(0.1, 0.1, 0.1, 0.1); */
@@ -288,6 +289,13 @@ body {
     .hide-on-mobile {
         display: none;
     }
+    .adjust-sqaure {
+        margin-top: 0;
+    }
+}
+
+.adjust-sqaure {
+    margin-top: -6%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -321,4 +329,10 @@ body {
 .list-unstyled li a {
     text-decoration: none;
     color: white;
+}
+
+.vertical-line {
+    border-left: 1px solid #e0dfdf;
+    min-height: 170px;
+    max-height: 100%;
 }
