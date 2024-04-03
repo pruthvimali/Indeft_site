@@ -166,7 +166,7 @@ body {
 
 .dark-overlay {
     position: relative;
-    /* display: inline-block; */
+    /* display: inline-block;  */
     overflow: hidden;
     height: 60vh;
 }
