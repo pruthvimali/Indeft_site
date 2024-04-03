@@ -45,6 +45,21 @@
             padding-top: 5vh;
             padding-bottom: 5vh;
         }
+
+
+        @media (max-width: 991.98px) { /* For medium and smaller devices */
+            .content {
+                margin-top: 0; /* Remove top margin on smaller devices */
+            }
+        
+            .vertical-line {
+                display: none; /* Hide vertical line on smaller devices */
+            }
+        
+            .col-lg-2 {
+                width: 100%; /* Full width on smaller devices */
+            }
+        }
     </style>
 </head>
 
@@ -459,7 +474,7 @@
             <p> We have experts, the right tools, and accolades, and partnerships, we can help you automate processes across industries, platforms, and use cases. Our holistic <b style="color:blue;">  robotic process automation solutions include: </b>
             </p>
             <br> <br> <br> <br>
-            <div class="container" style="padding-top: 0%; padding-bottom: -5%;">
+            <div class="container" style="padding-top: 0; ">
                 <div class="row" style="margin-top: -2%">
                     <div class="col-lg-4">
 
@@ -494,7 +509,7 @@
                 </div>
             </div>
             <!-- next row-->
-            <div class="container" style="padding-top: -30%; padding-bottom: -20%">
+            <div class="container" style="padding-top: 0; padding-bottom: 0; height: 500px;">
                 <div class="row" style="margin-top: -30%;  padding-bottom: -30% ">
                     <div class="col-lg-4">
 
@@ -534,7 +549,7 @@
 
 
         <!-- new div-->
-        <div style="background-color: black; padding-top: 4%; padding-bottom: 1%;">
+        <div style="background-color: black; padding-top: 3%; padding-bottom: 3%;">
 
 
             <div class="container">
@@ -651,7 +666,7 @@
         }
     </style>
 
-    <div style="background-color: #D3D3D3; padding-top: 4%; padding-bottom: 1%;">
+    <div style="background-color: #D3D3D3; padding-top: 1%; padding-bottom: 1%;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -701,7 +716,7 @@
     <div class="next-industry-main">
         <div style="height: 110px;">
             <div class="container">
-                <div class="next-industry-block" style="height: 360px;">
+                <div class="next-industry-block hide-on-mobile" style="height: 360px;">
                     <div class="row next-industry-image">
                         <p class="col-sm-5" style="color: white; display: block; top: 65%; position: relative; left: 15px;right:200px; ">BI & Reporting solutions</p>
                         <div class="col-sm-7" style="left:40px; top: 30px;">

@@ -49,11 +49,37 @@
         @media (min-width:450px) and (max-width:750px) {
             .main-image {
                 background: linear-gradient(to bottom, #503c4c, #a590a1);
-                background-size: 300vh 120vh;
+                background-size: 300vh 130vh;
                 background-position: top;
                 background-repeat: no-repeat;
             }
-            
+          
+                /* Center text */
+                .text-center {
+                    text-align: center;
+                }
+                
+                /* Adjust font size based on screen size */
+                h1 {
+                    font-size: 2em; /* Set the default font size */
+                }
+                
+                h5 {
+                    font-size: 1em; /* Set the default font size */
+                }
+                
+                /* Media Query for screens smaller than 768px */
+                @media only screen and (max-width: 767px) {
+                    h1 {
+                        font-size: 1.5em; /* Decrease font size for smaller screens */
+                    }
+                    h5 {
+                        font-size: 0.8em; /* Decrease font size for smaller screens */
+                    }
+                }
+              
+
+
         }
     </style>
 </head>
