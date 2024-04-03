@@ -6,8 +6,15 @@ window.onload = function() {
 $(document).ready(function() {
     $('#carouselExampleIndicators').carousel(); // Initialize carousel
 });
-
-window.addEventListener('scroll', function() {
+// window.addEventListener('scroll', function() {
+//     var navbar = document.querySelector('.navbar');
+//     if (window.scrollY > 50) { // Change 50 to the desired scroll position
+//         navbar.style.backgroundColor = '#545'; // New background color when scrolled
+//     } else {
+//         navbar.style.backgroundColor = 'pink'; // Default background color
+//     }
+// });
+window.addEventListener('scroll', function () {
     var navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) { // Change 50 to the desired scroll position
         navbar.classList.add('scrolled');
@@ -65,6 +72,77 @@ cs.addEventListener('click', () => {
         // servicesblock2.style.background='red'
 });
 
-document.getElementById("contactBtn").addEventListener("click", function() {
-    window.location.href = "/Indeft_site/templates/contact_us.html ";
+
+
+var dt= document.getElementById('dt')
+var end1= document.getElementById('end1')
+
+
+
+var servicestext1= document.getElementById('serviceblock1')
+var servicestext2= document.getElementById('serviceblock2')
+var servicestext3= document.getElementById('serviceblock3')
+var servicestext4= document.getElementById('serviceblock4')
+
+
+end1.addEventListener('click',()=>{
+    servicestext2.style.display='flex'
+    servicestext1.style.display='none'
+    servicestext3.style.display='none'
+    servicestext4.style.display='none'
+    
+    end1.style.background='black'
+    dt1.style.background='none'
+    cs1.style.background='none'
+
+    bt1.style.background='none'
+
+    end1.classList.add('btncolor');
+
+
+    // servicesblock2.style.background='white'
+});
+dt1.addEventListener('click',()=>{
+    servicestext2.style.display='none'
+    servicestext1.style.display='flex'
+    servicestext3.style.display='none'
+    servicestext4.style.display='none'
+    end1.style.background='none'
+    dt1.style.background='black'
+    cs1.style.background='none'
+    bt1.style.background='none'
+
+    dt1.classList.add('btncolor');
+    // servicesblock2.style.background='white'
+});
+
+bt1.addEventListener('click',()=>{
+    servicestext2.style.display='none'
+    servicestext1.style.display='none'
+    servicestext3.style.display='flex'
+    servicestext4.style.display='none'
+
+    end1.style.background='none'
+    dt1.style.background='none'
+    cs1.style.background='none'
+    bt1.style.background='black'
+
+
+    bt1.classList.add('btncolor');
+    // servicesblock2.style.background='white'
+});
+cs1.addEventListener('click',()=>{
+    servicestext2.style.display='none'
+    servicestext1.style.display='none'
+    servicestext3.style.display='none'
+    servicestext4.style.display='flex'
+
+    end1.style.background='none'
+    dt1.style.background='none'
+    cs1.style.background='black'
+    bt1.style.background='none'
+
+
+    cs1.classList.add('btncolor');
+    // servicesblock2.style.background='white'
 });

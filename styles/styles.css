@@ -4,7 +4,8 @@ body {
     position: relative;
 }
 
-#full-navbar {
+
+/* #full-navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: -webkit-sticky;
     position: sticky;
@@ -30,7 +31,7 @@ body {
 .navbar-nav .nav-link:hover {
     color: black !important;
     background-color: white!important;
-}
+} */
 
 .footer {
     position: absolute;
@@ -52,6 +53,7 @@ body {
     width: 100%;
     text-align: left;
     padding: 10px 0;
+    line-height: 1.8;
 }
 
 .horizontal-line {
@@ -255,10 +257,25 @@ body {
 
 .next-industry {
     background-color: #2d2db4;
-    background-size: 220vh 10vh;
+    background-size: 100% 100%;
     color: white;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.headfone-img {
+    padding-left: 0%;
+}
+
+@media (max-width: 768px) {
+    .next-industry {
+        background-size: cover;
+        padding-bottom: 15%;
+    }
+    .headfone-img {
+        top: 20px;
+        left: 40px;
+    }
 }
 
 .next-industry-image {
@@ -286,4 +303,22 @@ body {
     .hide-on-laptop {
         display: none;
     }
+}
+
+.bottom-bar {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0e2e51;
+}
+
+.bottom-bar .icon {
+    color: white;
+    font-size: 24px;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: white;
 }
