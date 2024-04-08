@@ -151,3 +151,34 @@ cs1.addEventListener('click', () => {
     cs1.classList.add('btncolor');
     // servicesblock2.style.background='white'
 });
+
+document.getElementById("contactBtn").addEventListener("click", function(){
+    window.location.href="/Indeft_site/templates/contact_us.html"
+})
+
+// slider.js
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay:{
+        DelayNode:1000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });   
+  // Adjust swiper height based on image height
+  var swiper = new Swiper(".newmySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    autoplay:{
+        DelayNode:1000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  }); 
+  
